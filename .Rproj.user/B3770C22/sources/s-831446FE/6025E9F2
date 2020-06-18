@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592501141364.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4045801896",
+    "id" : "6025E9F2",
+    "lastKnownWriteTime" : 1592457386,
+    "last_content_update" : 1592457386,
+    "path" : "C:/Users/robly/OneDrive/rob-blog/themes/hugo-academic/data/assets.toml",
+    "project_path" : "themes/hugo-academic/data/assets.toml",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 24,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

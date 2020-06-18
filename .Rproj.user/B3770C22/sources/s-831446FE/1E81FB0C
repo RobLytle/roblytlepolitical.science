@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592501553512.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1E81FB0C",
+    "lastKnownWriteTime" : 1592501756,
+    "last_content_update" : 1592501756935,
+    "path" : "C:/Users/robly/OneDrive/rob-blog/data/themes/minimal-fsu.toml",
+    "project_path" : "data/themes/minimal-fsu.toml",
+    "properties" : {
+        "cursorPosition" : "7,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 24,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

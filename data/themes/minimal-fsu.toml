@@ -1,12 +1,14 @@
 # Theme metadata
-name = "Minimal"
+name = "minimal-fsu"
 
 # Is theme light or dark?
 light = true
+#dark = true
 
 # Primary
-#primary = "#782F40"
-primary = "#CEB888"
+primary = "#782F40"
+primary_light = "#782F40"
+primary_dark = "#CEB888"
 
 
 # Menu

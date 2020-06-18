@@ -1,0 +1,14 @@
+.dark a,
+h3.article-title a:hover {
+  color: {{ .Get "primary_dark" }};
+}
+
+.dark .form-control:focus {
+  border-color: {{ .Get "primary_dark" }};
+}
+
+.dark .featurette-icon {
+  color: {{ .Get "primary_dark" }};
+}
+
+##

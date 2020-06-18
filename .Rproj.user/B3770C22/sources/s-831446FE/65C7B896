@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3032071686",
     "id" : "65C7B896",
-    "lastKnownWriteTime" : 1592457851,
-    "last_content_update" : 1592457851412,
+    "lastKnownWriteTime" : 1592506556,
+    "last_content_update" : 1592506556423,
     "path" : "C:/Users/robly/OneDrive/rob-blog/config.toml",
     "project_path" : "config.toml",
     "properties" : {
-        "cursorPosition" : "1,37",
-        "scrollLine" : "0"
+        "cursorPosition" : "24,0",
+        "scrollLine" : "8"
     },
     "read_only" : false,
     "read_only_alternatives" : [

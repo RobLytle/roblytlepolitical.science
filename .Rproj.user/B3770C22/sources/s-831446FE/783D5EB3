@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592506083889.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "783D5EB3",
+    "lastKnownWriteTime" : 1592506754,
+    "last_content_update" : 1592506754147,
+    "path" : "C:/Users/robly/OneDrive/rob-blog/data/fonts/custom.toml",
+    "project_path" : "data/fonts/custom.toml",
+    "properties" : {
+        "cursorPosition" : "9,19",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

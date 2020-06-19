@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>anes | Rob Lytle</title>
+    <link>/tag/anes/</link>
+      <atom:link href="/tag/anes/index.xml" rel="self" type="application/rss+xml" />
+    <description>anes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
+      <title>anes</title>
+      <link>/tag/anes/</link>
+    </image>
+    
+    <item>
+      <title>ANES</title>
+      <link>/post/anes-problems/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/anes-problems/</guid>
+      <description>&lt;p&gt;The 
+&lt;a href=&#34;https://www.electionstudies.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;American National Election Study&lt;/a&gt; (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the &amp;ldquo;cumulative data file&amp;rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset.&lt;/p&gt;
+&lt;p&gt;The ANES-CDF certainly hews closer to the ideal of tidy data than some canned datasets but is not without its share of eccentricities. I&amp;rsquo;m cataloging some of the (occasionally baffling) coding choices made by the ANES here, in the hopes that it might save some other public opinion researcher&amp;mdash;or hapless grad student&amp;mdash;a few minutes of headache down the road.&lt;/p&gt;
+&lt;h4 id=&#34;the-cdf-does-not-include-every-question-from-the-individual-surveys&#34;&gt;The CDF does not include &lt;em&gt;every&lt;/em&gt; question from the individual surveys.&lt;/h4&gt;
+&lt;p&gt;-&lt;/p&gt;
+&lt;h4 id=&#34;the-codebookhttpselectionstudiesorganes_timeseries_cdf_codebook_var-seems-to-be-wrong-about-na-values&#34;&gt;The 
+&lt;a href=&#34;https://electionstudies.org/anes_timeseries_cdf_codebook_var/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; seems to be wrong about &lt;code&gt;NA&lt;/code&gt; values.&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/7-point-codebook.PNG&#34; alt=&#34;anes codebook screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;According to the ANES-CDF codebook, NA values are given a numeric code. For example, the codebook tells us that the 7-point party ID variable is coded such that &lt;code&gt;0&lt;/code&gt; indicates &lt;code&gt;NA&lt;/code&gt; and &lt;code&gt;INAP&lt;/code&gt; indicates that the question was not asked. Similarly, the codebook says that feeling thermometers are coded such that &lt;code&gt;98&lt;/code&gt; and &lt;code&gt;99&lt;/code&gt; indicate &lt;code&gt;Don&#39;t Know&lt;/code&gt; and &lt;code&gt;NA&lt;/code&gt; respectively, while &lt;code&gt;-8&lt;/code&gt; and &lt;code&gt;-9&lt;/code&gt; represent &lt;code&gt;Don&#39;t Know&lt;/code&gt; and &lt;code&gt;NA&lt;/code&gt; for &lt;code&gt;VCF9255&lt;/code&gt; (satisfaction with democracy).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s not rely on the codebook. Using &lt;code&gt;Rcode&lt;/code&gt;, I&amp;rsquo;ll pull a few variables to check how they&amp;rsquo;re coded:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# pulling anes-cdf from a GitHub repository
+cdf &amp;lt;- rio::import(&amp;quot;https://github.com/RobLytle/intra-party-affect/raw/master/data/raw/cdf-raw-trim.rds&amp;quot;)%&amp;gt;%
+  select(VCF0004, #year
+         VCF0218, #Democrat FT
+         VCF0224, #Republican FT
+         VCF0301, #Party ID
+         VCF9255  #Satisfied/not with Democracy
+         )%&amp;gt;%
+  rename(year = VCF0004, #renaming variables
+         ft_dem = VCF0218,
+         ft_rep = VCF0224,
+         pid_7 = VCF0301,
+         democ_satis = VCF9255)%&amp;gt;%
+  filter(year &amp;gt;= 2004)%&amp;gt;% # democ_satis isn&#39;t asked until 2004, so I&#39;m trimming the data for ease of illustration
+  glimpse()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 13,718
+## Columns: 5
+## $ year        &amp;lt;dbl&amp;gt; 2004, 2004, 2004, 2004, 2004, 2004, 2004, 2004, 2004, 2...
+## $ ft_dem      &amp;lt;dbl&amp;gt; NA, 85, 15, 50, 30, 30, 30, 70, 50, 15, 85, 60, 70, 40,...
+## $ ft_rep      &amp;lt;dbl&amp;gt; NA, 40, 85, 97, 85, 30, 60, 50, 30, 97, 60, 60, 50, 60,...
+## $ pid_7       &amp;lt;dbl&amp;gt; 4, 3, 7, 4, 7, 4, 7, 2, 3, 7, 3, 3, 3, 6, 3, 3, 3, 6, 4...
+## $ democ_satis &amp;lt;dbl&amp;gt; 2, 1, 2, NA, 1, 3, 1, 1, NA, 1, 2, 2, 3, 2, 2, 3, NA, 1...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Just by &lt;code&gt;tidyverse::glimpse()&lt;/code&gt;ing the data, we can tell that there are, in fact, &lt;code&gt;NA&lt;/code&gt; values, contrary to what the codebook says, but let&amp;rsquo;s be certain. I throw together a quick visualization of the frequency of each variable&amp;rsquo;s values.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Making quick ggplots of frequencies
+democ &amp;lt;- ggplot(cdf, aes(x = democ_satis)) +
+  geom_bar(aes(y = stat(count))) 
+
+pid &amp;lt;- ggplot(cdf, aes(x = pid_7)) +
+  geom_bar(aes(y = stat(count)))+
+  scale_x_continuous(breaks = seq(1, 7, by = 1))+
+  labs(y = &amp;quot; &amp;quot;)
+
+ft &amp;lt;- cdf%&amp;gt;%
+  pivot_longer(ft_dem:ft_rep, names_to = &amp;quot;name&amp;quot;, values_to = &amp;quot;ft&amp;quot;)%&amp;gt;% #combining D and R fts into one column
+  filter(ft &amp;gt;= 90)%&amp;gt;%  # just filtering high FTs to make visualization easier
+ggplot(aes(x = ft)) +
+  geom_bar(aes(y = stat(count))) +
+  scale_x_continuous(breaks = seq(90, 100, by = 1)) +
+  labs(y = &amp;quot; &amp;quot;)
+
+#putting each visualization into a single object
+gridExtra::grid.arrange(democ,
+             pid,
+             ft,
+          ncol = 3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Sure enough, none of the values &lt;code&gt;DK&lt;/code&gt;/&lt;code&gt;NA&lt;/code&gt;/&lt;code&gt;RF&lt;/code&gt; values denoted in the codebook actually appear in the CDF. It seems as though they were switched to &lt;code&gt;NA&lt;/code&gt; when the dataset was prepared.&lt;/p&gt;
+&lt;h4 id=&#34;some-responses-are-truncated&#34;&gt;Some responses are truncated.&lt;/h4&gt;
+&lt;p&gt;Feeling thermometer questions ask respondents to rate their warmth towards a group (like &amp;ldquo;Democrats&amp;rdquo; or &amp;ldquo;Catholics&amp;rdquo;) on a scale from 0–100. As seen above though, the ANES feeling thermometer variables max out at 97. 98 and 99 are (supposedly) reserved for &lt;code&gt;NA&lt;/code&gt;/&lt;code&gt;Don&#39;t Know&lt;/code&gt;—though that convention is not currently in use. Likely this was done to save space and avoid 3-digit numbers. Size may have been a valid concern in a time before several-terabyte harddrives were commonplace, but serves no purpose now.&lt;/p&gt;
+&lt;p&gt;From the researcher&amp;rsquo;s perspective, this truncation is troublesome, but not disastrous. Net Partisan Affect (e.g., 
+&lt;a href=&#34;https://academic.oup.com/poq/article-abstract/76/3/405/1894274&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iyengar, Sood, and Lelkes 2012&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

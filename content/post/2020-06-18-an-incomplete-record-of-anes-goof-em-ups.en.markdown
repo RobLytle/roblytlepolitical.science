@@ -1,10 +1,11 @@
 ---
 draft: false
 title: "ANES Headaches and Headscratchers"
+subtitle: "An incomplete collection of eccentricities in the [American National Election Study](https://electionstudies.org/)"
 slug: /anes-problems/
 author: "Rob Lytle"
 date: 2020-06-19
-categories: ["R"]
+categories: ["political science", "public opinion", "ANES", "R"]
 tags: ["R Markdown", "plot", "visualization", "rstats", "survey", "anes", "politics", "political science", "public opinion", "tidyverse", "tidy data"]
 ---
 

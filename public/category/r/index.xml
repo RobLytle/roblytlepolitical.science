@@ -5,22 +5,12 @@
     <link>/category/r/</link>
       <atom:link href="/category/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
       <link>/category/r/</link>
     </image>
-    
-    <item>
-      <title>ANES</title>
-      <link>/post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups/</link>
-      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups/</guid>
-      <description>&lt;p&gt;The 
-&lt;a href=&#34;https://www.electionstudies.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;American National Election Study&lt;/a&gt; is&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>

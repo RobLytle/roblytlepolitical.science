@@ -20,17 +20,19 @@ subtitle = ""
   name = "R"
 #  description = "90%"
   
-[[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-#  description = "100%"  
-  
+
 [[feature]]
   icon = "superscript"
   icon_pack = "fas"
   name = "LaTeX"
 #  description = "10%"
+
+[[feature]]
+  icon = "bicycle"
+  icon_pack = "fas"
+  name = "Bike Commuting"
+#  description = "100%"  
+  
 
 # Uncomment to use emoji icons.
 # [[feature]]

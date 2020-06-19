@@ -15,7 +15,6 @@ email: "rlytle2@fsu.edu"
 interests:
 - Electoral Behavior
 - Fringe Politics
-- Online Radicalization
 - Political Polarization
 organizations:
 - name: Florida State University
@@ -41,6 +40,6 @@ user_groups:
 - Visitors
 ---
 
+I'm earning my doctorate in political science at Florida State University studying polarization, anti-establishment politics, and the affective divisions within parties. 
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+This site is currently under construction. Going forward, I'll keep it up to date with project updates and [blog posts](post). If you're interested in what I'm working on right now, feel free to follow me on [GitHub](https://github.com/RobLytle), where I host my in-progress research.

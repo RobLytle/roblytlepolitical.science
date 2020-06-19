@@ -234,14 +234,14 @@
   
   <meta property="og:site_name" content="Rob Lytle">
   <meta property="og:url" content="/post/anes-problems/">
-  <meta property="og:title" content="ANES | Rob Lytle">
+  <meta property="og:title" content="ANES Headaches and Headscratchers | Rob Lytle">
   <meta property="og:description" content="The American National Election Study (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the &ldquo;cumulative data file&rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset."><meta property="og:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-06-18T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-06-19T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-18T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-06-19T00:00:00&#43;00:00">
   
 
   
@@ -267,10 +267,10 @@
     "@type": "WebPage",
     "@id": "/post/anes-problems/"
   },
-  "headline": "ANES",
+  "headline": "ANES Headaches and Headscratchers",
   
-  "datePublished": "2020-06-18T00:00:00Z",
-  "dateModified": "2020-06-18T00:00:00Z",
+  "datePublished": "2020-06-19T00:00:00Z",
+  "dateModified": "2020-06-19T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -303,7 +303,7 @@
 
 
 
-  <title>ANES | Rob Lytle</title>
+  <title>ANES Headaches and Headscratchers | Rob Lytle</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -579,7 +579,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>ANES</h1>
+  <h1>ANES Headaches and Headscratchers</h1>
 
   
 
@@ -598,7 +598,7 @@
     
       
     
-    Jun 18, 2020
+    Jun 19, 2020
   </span>
   
 
@@ -607,7 +607,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    4 min read
+    5 min read
   </span>
   
 
@@ -649,27 +649,37 @@
     <div class="article-style">
       <p>The 
 <a href="https://www.electionstudies.org" target="_blank" rel="noopener">American National Election Study</a> (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the &ldquo;cumulative data file&rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset.</p>
-<p>The ANES-CDF certainly hews closer to the ideal of tidy data than some canned datasets but is not without its share of eccentricities. I&rsquo;m cataloging some of the (occasionally baffling) coding choices made by the ANES here, in the hopes that it might save some other public opinion researcher&mdash;or hapless grad student&mdash;a few minutes of headache down the road.</p>
-<h4 id="the-cdf-does-not-include-every-question-from-the-individual-surveys">The CDF does not include <em>every</em> question from the individual surveys.</h4>
-<p>-</p>
-<h4 id="the-codebookhttpselectionstudiesorganes_timeseries_cdf_codebook_var-seems-to-be-wrong-about-na-values">The 
-<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> seems to be wrong about <code>NA</code> values.</h4>
+<p>The ANES-CDF certainly hews closer to the ideal of 
+<a href="https://vita.had.co.nz/papers/tidy-data.pdf" target="_blank" rel="noopener">tidy data</a> than some canned datasets but is not without its share of eccentricities. I&rsquo;m cataloging some of the (occasionally baffling) coding choices made by the ANES here, in the hopes that it might save some other public opinion researcher&mdash;especialy a hapless grad student&mdash;a few <del>minutes</del> hours of headache down the road.</p>
+<h3 id="the-cdf-does-not-include-every-question-from-the-individual-surveys">The CDF does not include <em>every</em> question from the individual surveys.</h3>
+<p>This is not so much a mistake on the part of the ANES, but isn&rsquo;t immediately apparent. The cumulative data file does not contain an exhaustive collection of all of the questions asked by the ANES each year. I&rsquo;m currently working on a project involving within-party divisions, and wanted information about primary vote-choice. Thinking I was clever, I opened the cdf 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> and tried (to no avail) to find a question asking for whom respondents voted for in presidential primaries. Broken, defeated, and wondering why the ANES wouldn&rsquo;t ask such an obvious question; I wearily turned to Google where I stumbled across the 
+<a href="https://electionstudies.org/resources/anes-continuity-guide/" target="_blank" rel="noopener">ANES Continuity Guide</a>. Using the surprisingly well designed tool, I discovered that the question I was hoping to find <em>was</em> asked by the ANES occasionally, but for what I&rsquo;m sure is a <strong>very</strong> good reason is excluded from the CDF (please version control the CDF).</p>
+<p>If the variable you want to pull isn&rsquo;t in the CDF, still take the time to look through the 
+<a href="https://electionstudies.org/resources/anes-continuity-guide/" target="_blank" rel="noopener">continuity guide</a>. The ANES may have what you&rsquo;re looking for if you&rsquo;re willing to stitch together a few different files.</p>
+<h3 id="the-codebookhttpselectionstudiesorganes_timeseries_cdf_codebook_var-seems-to-be-wrong-about-na-values">The 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> seems to be wrong about <code>NA</code> values.</h3>
 <p><img src="../../img/7-point-codebook.PNG" alt="anes codebook screenshot"></p>
-<p>According to the ANES-CDF codebook, NA values are given a numeric code. For example, the codebook tells us that the 7-point party ID variable is coded such that <code>0</code> indicates <code>NA</code> and <code>INAP</code> indicates that the question was not asked. Similarly, the codebook says that feeling thermometers are coded such that <code>98</code> and <code>99</code> indicate <code>Don't Know</code> and <code>NA</code> respectively, while <code>-8</code> and <code>-9</code> represent <code>Don't Know</code> and <code>NA</code> for <code>VCF9255</code> (satisfaction with democracy).</p>
-<p>Let&rsquo;s not rely on the codebook. Using <code>Rcode</code>, I&rsquo;ll pull a few variables to check how they&rsquo;re coded:</p>
+<p>According to the ANES-CDF 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a>, NA values are given a numeric code. For example, the codebook tells us that the 7-point party ID variable is coded such that <code>0</code> indicates <code>NA</code> and <code>INAP</code> indicates that the question was not asked. Similarly, the 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> says that feeling thermometers are coded such that <code>98</code> and <code>99</code> indicate <code>Don't Know</code> and <code>NA</code> respectively, while <code>-8</code> and <code>-9</code> represent <code>Don't Know</code> and <code>NA</code> for <code>VCF9255</code> (satisfaction with democracy).</p>
+<p>Let&rsquo;s not rely on the 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a>. Using <code>Rcode</code>, I&rsquo;ll pull a few variables to check how they&rsquo;re coded:</p>
 <pre><code class="language-r"># pulling anes-cdf from a GitHub repository
 cdf &lt;- rio::import(&quot;https://github.com/RobLytle/intra-party-affect/raw/master/data/raw/cdf-raw-trim.rds&quot;)%&gt;%
   select(VCF0004, #year
          VCF0218, #Democrat FT
          VCF0224, #Republican FT
          VCF0301, #Party ID
-         VCF9255  #Satisfied/not with Democracy
+         VCF9255,  #Satisfied/not with Democracy
+          #education 7cat
          )%&gt;%
   rename(year = VCF0004, #renaming variables
          ft_dem = VCF0218,
          ft_rep = VCF0224,
          pid_7 = VCF0301,
-         democ_satis = VCF9255)%&gt;%
+         democ_satis = VCF9255,
+         )%&gt;%
   filter(year &gt;= 2004)%&gt;% # democ_satis isn't asked until 2004, so I'm trimming the data for ease of illustration
   glimpse()
 </code></pre>
@@ -681,7 +691,9 @@ cdf &lt;- rio::import(&quot;https://github.com/RobLytle/intra-party-affect/raw/m
 ## $ pid_7       &lt;dbl&gt; 4, 3, 7, 4, 7, 4, 7, 2, 3, 7, 3, 3, 3, 6, 3, 3, 3, 6, 4...
 ## $ democ_satis &lt;dbl&gt; 2, 1, 2, NA, 1, 3, 1, 1, NA, 1, 2, 2, 3, 2, 2, 3, NA, 1...
 </code></pre>
-<p>Just by <code>tidyverse::glimpse()</code>ing the data, we can tell that there are, in fact, <code>NA</code> values, contrary to what the codebook says, but let&rsquo;s be certain. I throw together a quick visualization of the frequency of each variable&rsquo;s values.</p>
+<p>Just by 
+<a href="https://tibble.tidyverse.org/reference/glimpse.html" target="_blank" rel="noopener"><code>tidyverse::glimpse()</code></a>ing the data, we can tell that there are, in fact, <code>NA</code> values, contrary to what the 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> says, but let&rsquo;s be certain. I&rsquo;ll throw together a quick visualization of the frequency of each variable&rsquo;s values.</p>
 <pre><code class="language-r"># Making quick ggplots of frequencies
 democ &lt;- ggplot(cdf, aes(x = democ_satis)) +
   geom_bar(aes(y = stat(count))) 
@@ -706,11 +718,18 @@ gridExtra::grid.arrange(democ,
           ncol = 3)
 </code></pre>
 <p><img src="../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Sure enough, none of the values <code>DK</code>/<code>NA</code>/<code>RF</code> values denoted in the codebook actually appear in the CDF. It seems as though they were switched to <code>NA</code> when the dataset was prepared.</p>
-<h4 id="some-responses-are-truncated">Some responses are truncated.</h4>
+<p>Sure enough, none of the values <code>DK</code>/<code>NA</code>/<code>RF</code> values denoted in the 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> actually appear in the CDF. It seems as though they were switched to <code>NA</code> when the dataset was prepared.</p>
+<h3 id="some-responses-are-truncated">Some responses are truncated.</h3>
 <p>Feeling thermometer questions ask respondents to rate their warmth towards a group (like &ldquo;Democrats&rdquo; or &ldquo;Catholics&rdquo;) on a scale from 0–100. As seen above though, the ANES feeling thermometer variables max out at 97. 98 and 99 are (supposedly) reserved for <code>NA</code>/<code>Don't Know</code>—though that convention is not currently in use. Likely this was done to save space and avoid 3-digit numbers. Size may have been a valid concern in a time before several-terabyte harddrives were commonplace, but serves no purpose now.</p>
-<p>From the researcher&rsquo;s perspective, this truncation is troublesome, but not disastrous. Net Partisan Affect (e.g., 
-<a href="https://academic.oup.com/poq/article-abstract/76/3/405/1894274" target="_blank" rel="noopener">Iyengar, Sood, and Lelkes 2012</a>)</p>
+<p>From the researcher&rsquo;s perspective, this truncation is troublesome, but not disastrous. Net group affect—a common measure of polarization (e.g., 
+<a href="https://academic.oup.com/poq/article-abstract/76/3/405/1894274" target="_blank" rel="noopener">Iyengar, Sood, and Lelkes 2012</a>)—is measured as <code>\(FT_{in} - FT_{out}\)</code>. Since the ANES coding scheme essentially subtracts <code>3</code> from a sizeable chunk of respondents&rsquo; in-party scores (notice how many <code>97</code>s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.</p>
+<p>These aren&rsquo;t the only instances of truncation or a misleading 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> entry, 
+<a href="http://gojiberries.io/2010/12/29/coding-issues-in-the-anes-cumulative-file/" target="_blank" rel="noopener">here</a> is an example of a variable in which the variable&rsquo;s levels varied year to year—not noted in its 
+<a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> entry.</p>
+<h3 id="takeaways">Takeaways</h3>
+<p>The lesson here is to always validate for yourself what is claimed by a dataset&rsquo;s documentation. These problems usually are not deadly, just easily missed. Implementing some kind of version control on the CDF would presumably make it easier to improve the dataset and fix these headaches without breaking existing scripts/analyses.</p>
 
     </div>
 
@@ -739,6 +758,10 @@ gridExtra::grid.arrange(democ,
   
   <a class="badge badge-light" href="../../tag/survey/">survey</a>
   
+  <a class="badge badge-light" href="../../tag/tidy-data/">tidy data</a>
+  
+  <a class="badge badge-light" href="../../tag/tidyverse/">tidyverse</a>
+  
   <a class="badge badge-light" href="../../tag/visualization/">visualization</a>
   
 </div>
@@ -756,7 +779,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/anes-problems/&amp;text=ANES" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/anes-problems/&amp;text=ANES%20Headaches%20and%20Headscratchers" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -769,7 +792,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/anes-problems/&amp;t=ANES" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/anes-problems/&amp;t=ANES%20Headaches%20and%20Headscratchers" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -782,7 +805,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="mailto:?subject=ANES&amp;body=/post/anes-problems/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=ANES%20Headaches%20and%20Headscratchers&amp;body=/post/anes-problems/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -795,7 +818,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/anes-problems/&amp;title=ANES" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/anes-problems/&amp;title=ANES%20Headaches%20and%20Headscratchers" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -808,7 +831,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="whatsapp://send?text=ANES%20/post/anes-problems/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=ANES%20Headaches%20and%20Headscratchers%20/post/anes-problems/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -821,7 +844,7 @@ gridExtra::grid.arrange(democ,
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/anes-problems/&amp;title=ANES" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/anes-problems/&amp;title=ANES%20Headaches%20and%20Headscratchers" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

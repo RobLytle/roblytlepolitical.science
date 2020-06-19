@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>visualization | Rob Lytle</title>
-    <link>/tag/visualization/</link>
-      <atom:link href="/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
-    <description>visualization</description>
+    <title>tidy data | Rob Lytle</title>
+    <link>/tag/tidy-data/</link>
+      <atom:link href="/tag/tidy-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>tidy data</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
-      <title>visualization</title>
-      <link>/tag/visualization/</link>
+      <title>tidy data</title>
+      <link>/tag/tidy-data/</link>
     </image>
     
     <item>

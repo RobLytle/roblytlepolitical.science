@@ -1,4 +1,6 @@
 ---
+draft: true
+
 title: An (incomplete) record of ANES Goof 'em ups
 author: Rob Lytle
 date: '2020-06-18'
@@ -9,7 +11,6 @@ tags:
   - ANES
   - Survey
   - research methods
-draft: true
 subtitle: ''
 summary: ''
 authors: []
@@ -23,4 +24,3 @@ projects: []
 ---
 
 
-The [American National Elections Study](https://electionstudies.org/) is a long-running canned survey dataset, and is a frequent first-stop for Americanists looking to study trends in the electorate.

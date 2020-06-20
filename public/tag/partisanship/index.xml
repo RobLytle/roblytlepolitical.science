@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>partisanship | Rob Lytle</title>
+    <link>/tag/partisanship/</link>
+      <atom:link href="/tag/partisanship/index.xml" rel="self" type="application/rss+xml" />
+    <description>partisanship</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
+      <title>partisanship</title>
+      <link>/tag/partisanship/</link>
+    </image>
+    
+    <item>
+      <title>Declining In-Party Affect</title>
+      <link>/project/in-party-affect/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/in-party-affect/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,7 +4,7 @@ authors:
 bio: Electoral behavior, fringe politics, online radicalization.
 education:
   courses:
-  - course: PhD Student at Florida State University
+  - course: PhD Student 
     year: 2019 - Present
     institution: Florida State University
   - course: BS in Political Science and Psychology

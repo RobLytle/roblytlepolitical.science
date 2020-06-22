@@ -33,31 +33,6 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-06-21T23:16:58-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/florida-politics/</loc>
-    <lastmod>2020-06-21T23:16:58-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/politics/</loc>
-    <lastmod>2020-06-21T23:16:58-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-06-21T23:16:58-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/banality-of-desantis/</loc>
-    <lastmod>2020-06-21T23:16:58-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/category/anes/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
@@ -69,6 +44,11 @@
   
   <url>
     <loc>/post/anes-problems/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -89,6 +69,11 @@
   
   <url>
     <loc>/tag/politics/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -190,16 +175,6 @@
   <url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>

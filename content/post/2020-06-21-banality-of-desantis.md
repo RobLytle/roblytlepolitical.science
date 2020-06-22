@@ -12,12 +12,12 @@ summary: ''
 authors: []
 lastmod: '2020-06-21T23:16:58-04:00'
 featured: no
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: no
+image: 
+    caption: ''
+    focal_point: ''
+    preview_only: no
 projects: []
-draft: = TRUE
+draft: true
 ---
 
 In a painfully predictable turn of events, Covid-19 cases have begun to skyrocket in Florida, a few short weeks after state and local government began the process of (prematurely) rolling back public health safeguards. This week, Governor Ron DeSantis performed an impressive rhetorical trick, abdicating not just his own responsibility for the death and illness&mdash;but that of all the wealthy consumers and business owners agitating for a return to normalcy at the expense of workers' lives.
@@ -29,3 +29,5 @@ Here, I take DeSantis at his word. I think he is entirely correct that *under hi
 DeSantis&mdash;not unlike Cuomo, Newsom, and Abbott&mdash; knows that it's smart politics to collapse the range of choices presented to the public to "definitely lose your job" or "possibly get covid". Republicans recognize that the vulnerable who are hurt by their policies (or lack thereof) were likely not going to vote for them anyway and it's safe for Democrats to hew to a similar line because, after all, what are the poor to do&mdash;vote for a Republican? Fat chance.
 
 DeSantis this week took the all too common rhetorical disappearing act to a new level, not only refusing to keep people safe, but placing the blame for the consequences of his inaction on those most hurt by it, blaming ["overwhelmingly hispanic farm workers for the rise in cases"](https://www.tampabay.com/news/health/2020/06/19/ron-desantis-blames-florida-farmworkers-for-covid-aid-groups-say-testing-help-came-late/). Not the companies forcing them to work, not his own administration for failing to provide a realistic alternative to putting themselves in danger while DeSantis and his donors pine away for a freshly greased economic machine.
+
+[Header Image from AP Photo](https://www.politico.com/states/florida/story/2020/06/20/desantis-pivots-on-covid-19-surge-says-testing-doesnt-account-for-spike-1293901)

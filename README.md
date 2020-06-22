@@ -1,5 +1,4 @@
 #  [roblytlepolitical.science](https://roblytlepolitical.science)
-personal site
 
 This is the repository for https://roblytlepolitical.science
 

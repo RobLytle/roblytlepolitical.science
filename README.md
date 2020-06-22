@@ -1,7 +1,7 @@
-# roblytlepolitical.science
+#  [roblytlepolitical.science](https://roblytlepolitical.science)
 personal site
 
-This is the repository for roblytlepolitical.science
+This is the repository for https://roblytlepolitical.science
 
 built using [`blogdown`](https://bookdown.org/yihui/blogdown/) and [`hugo-academic`](https://github.com/gcushen/hugo-academic).
 

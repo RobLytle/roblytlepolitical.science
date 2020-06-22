@@ -10,7 +10,7 @@ categories:
 tags: ["politics", "Ron DeSantis", "Florida Politics", "Coronavirus", "COVID-19", "State Politics", "Governor", "Florida"]
 summary: ''
 authors: []
-lastmod: '2020-06-21T23:16:58-04:00'
+lastmod: '2020-06-22T12:47:58-04:00'
 featured: no
 image: 
     caption: ''

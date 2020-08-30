@@ -5,12 +5,48 @@
     <link>/category/r/</link>
       <atom:link href="/category/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
       <link>/category/r/</link>
     </image>
+    
+    <item>
+      <title>ANES Coding Problem: VCF0731</title>
+      <link>/post/anes-problems-too/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/anes-problems-too/</guid>
+      <description>&lt;p&gt;At this point, it&amp;rsquo;s well established that the ANES CDF&amp;rsquo;s 
+&lt;a href=&#34;https://electionstudies.org/wp-content/uploads/2018/12/anes_timeseries_cdf_codebook_var.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; is 
+&lt;a href=&#34;../../post/anes-problems/&#34;&gt;not to be trusted&lt;/a&gt; (
+&lt;a href=&#34;http://gojiberries.io/2010/12/29/coding-issues-in-the-anes-cumulative-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;I&amp;rsquo;m repeating &amp;ldquo;not to be trusted to include a second link!&lt;/a&gt;). Recently, I stumbled across another example of incorrect coding in the 
+&lt;a href=&#34;https://electionstudies.org/data-center/anes-time-series-cumulative-data-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cumulative data file&lt;/a&gt;, this time in &lt;code&gt;VCF0731&lt;/code&gt; - Do you ever discuss politics with your family or friends?&lt;/p&gt;
+&lt;p&gt;The codebook reports 5 levels:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Do you ever discuss politics with your family or friends?
+
+1. Yes
+5. No
+
+8. DK
+9. NA
+
+INAP. question not used
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, when we load the variable and examine the unique values:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# pulling anes-cdf from a GitHub repository
+cdf &amp;lt;- rio::import(&amp;quot;https://github.com/RobLytle/intra-party-affect/raw/master/data/raw/cdf-raw-trim.rds&amp;quot;)
+
+
+unique(cdf$VCF0731)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] NA  5  1  6  7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We see a completely different coding scheme. We are left adrift, wondering &amp;ldquo;What is &lt;code&gt;6&lt;/code&gt;? What is &lt;code&gt;7&lt;/code&gt;?&amp;rdquo; Do &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;5&lt;/code&gt; &lt;em&gt;really&lt;/em&gt; mean &amp;ldquo;yes&amp;rdquo; and &amp;ldquo;no&amp;rdquo;?&lt;/p&gt;
+&lt;p&gt;We may never know.&lt;/p&gt;
+&lt;p&gt;For a survey that costs several million dollars to conduct, you&amp;rsquo;d think we could expect a double-checked codebook (or at least some kind of version control to easily fix these things as they&amp;rsquo;re identified).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ANES Headaches and Headscratchers</title>

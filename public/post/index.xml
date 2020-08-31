@@ -45,6 +45,8 @@ unique(cdf$VCF0731)
 &lt;p&gt;We see a completely different coding scheme. We are left adrift, wondering &amp;ldquo;What is &lt;code&gt;6&lt;/code&gt;? What is &lt;code&gt;7&lt;/code&gt;?&amp;rdquo; Do &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;5&lt;/code&gt; &lt;em&gt;really&lt;/em&gt; mean &amp;ldquo;yes&amp;rdquo; and &amp;ldquo;no&amp;rdquo;?&lt;/p&gt;
 &lt;p&gt;We may never know.&lt;/p&gt;
 &lt;p&gt;For a survey that costs several million dollars to conduct, you&amp;rsquo;d think we could expect a double-checked codebook (or at least some kind of version control to easily fix these things as they&amp;rsquo;re identified).&lt;/p&gt;
+&lt;p&gt;A version of this post was also published on the gojiberries blog, 
+&lt;a href=&#34;http://gojiberries.io/2020/08/30/another-anes-goof-em-up-vcf0731/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

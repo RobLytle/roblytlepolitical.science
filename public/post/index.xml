@@ -5,7 +5,7 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Getting Started with RStudio</title>
       <link>/post/2021-03-29-r-workshop/</link>
-      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       <guid>/post/2021-03-29-r-workshop/</guid>
       <description>
 &lt;script src=&#34;../post/2021-03-29-r-workshop/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
@@ -249,8 +249,10 @@ ggplot(data = states_df, aes(x = womleg_2011)) +
     labs(x = &amp;quot;Percent Workers Unionized (2010)&amp;quot;, #adding some nice labels
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;
-### Regression&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Regression&lt;/h3&gt;
 &lt;p&gt;Taking those same variables, let’s run a bivariate regression analysis. A linear regression is done with the function &lt;code&gt;lm()&lt;/code&gt;. The first argument in &lt;code&gt;lm()&lt;/code&gt; is the regression formula. Write your &lt;strong&gt;dependent&lt;/strong&gt; (outcome) variable on the left hand side and our &lt;strong&gt;independent&lt;/strong&gt; variable on the right hand side. In place of &lt;code&gt;=&lt;/code&gt;, we have to use the &lt;code&gt;~&lt;/code&gt; in the formula (since &lt;code&gt;=&lt;/code&gt; already means something to R).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;bv_model &amp;lt;- lm(womleg_2011 ~ union10, data = states_df) #running the regression and putting it in an object
 summary(bv_model)&lt;/code&gt;&lt;/pre&gt;

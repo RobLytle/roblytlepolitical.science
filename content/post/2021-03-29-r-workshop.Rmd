@@ -37,17 +37,17 @@ Before you start coding, you need to create a new project directory. A `.proj` f
 
 See the screenshots below to set up your project.
 
-!["Creating a new project"](new-project.PNG)
+!["Creating a new project"](img/new-project.PNG)
 
-!["Place the project in a new directory"](new-directory.PNG)
+!["Place the project in a new directory"](img/new-directory.PNG)
 
-!["We just need a regular project"](new-project-3.PNG)
+!["We just need a regular project"](img/new-project-3.PNG)
 
-!["Give your project a name, and tell RStudio where to put it"](new-directory.PNG)
+!["Give your project a name, and tell RStudio where to put it"](img/new-directory.PNG)
 
 Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), givign it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you **must** write it in your script, not the console or terminal window below.
 
-!["Click the \"new script\" button in the upper left corner"](blank-project.PNG)
+!["Click the \"new script\" button in the upper left corner"](img/blank-project.PNG)
 
 ## Download your data.
 
@@ -71,7 +71,7 @@ You might get a warning that one or more of your packages was built under a diff
 
 To load data in R, it needs to be in a **dataframe**&mdash;an **object** made up of columns (variables) and rows (observations). We do this by using a function to **read** the dataset from your computer and the `<-` operator to put the data into the dataframe:
 ```{R}
-states_df <- read_dta("states.dta") #You can say this as "states_df gets states.dta. i
+states_df <- read_dta("data/states.dta") #You can say this as "states_df gets states.dta. i
 
 	glimpse(states_df) #take a quick peek at your data, make sure it looks how you expect
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with RStudio"
 author: "Rob Lytle"
-date: '2021-03-16'
+date: '2021-03-29'
 output:
   html_document:
     df_print: paged
@@ -196,7 +196,6 @@ ggplot(data = states_df, aes(x = union10, y = womleg_2011)) +
 			 y = "Percent of Legislature Women (2011)",
 			 color = "Cook Index", #titling our legend
 			 title = "Unionization and Women's Representation")
-
 
 ```
 

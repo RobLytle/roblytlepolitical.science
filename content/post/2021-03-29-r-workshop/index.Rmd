@@ -134,6 +134,7 @@ ggplot(data = states_df, aes(x = union10, y = womleg_2011)) +
 			 y = "Percent of Legislature Women (2011)",
 			 title = "Unionization and Women's Representation")
 ```
+
 ### Regression
 
 Taking those same variables, let's run a bivariate regression analysis. A linear regression is done with the function `lm()`. The first argument in `lm()` is the regression formula. Write your **dependent** (outcome) variable on the left hand side and our **independent** variable on the right hand side. In place of `=`, we have to use the `~` in the formula (since `=` already means something to R).

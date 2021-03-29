@@ -18,7 +18,7 @@
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       <guid>/post/undergrad-workshop/</guid>
       <description>
-&lt;script src=&#34;../post/undergrad-workshop/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;../rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;many-roads-to-success&#34; class=&#34;section level1&#34;&gt;
@@ -37,24 +37,24 @@
 &lt;p&gt;Before you start coding, you need to create a new project directory. A &lt;code&gt;.proj&lt;/code&gt; file simply tells RStudio to start looking for files from whichever directory your &lt;code&gt;.proj&lt;/code&gt; file is in—it’s the equivalent of using the &lt;code&gt;setwd(...)&lt;/code&gt; function at the top of a script, but you only have to do it one time, even if you have multiple scripts that you’re working in. The other benefit, is that you can share the project directory with an instructor or colleague and your code will function perfectly. If you set a working directory, the person to whom you share a script will have to manually set their own working directory, which can be frustrating, inefficient, and error-prone. It’s a good habit to &lt;strong&gt;always&lt;/strong&gt; work in a project environment.&lt;/p&gt;
 &lt;p&gt;See the screenshots below to set up your project.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;new-project.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/new-project.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Creating a new project”&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;new-directory.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/new-directory.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Place the project in a new directory”&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;new-project-3.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/new-project-3.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“We just need a regular project”&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;new-directory.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/new-directory.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Give your project a name, and tell RStudio where to put it”&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), givign it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you &lt;strong&gt;must&lt;/strong&gt; write it in your script, not the console or terminal window below.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;blank-project.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/blank-project.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Click the &#34;new script&#34; button in the upper left corner”&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -75,7 +75,7 @@ library(haven) #Haven contains the read_dta() function; this allows us to read S
 &lt;div id=&#34;load-your-data&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Load your data&lt;/h2&gt;
 &lt;p&gt;To load data in R, it needs to be in a &lt;strong&gt;dataframe&lt;/strong&gt;—an &lt;strong&gt;object&lt;/strong&gt; made up of columns (variables) and rows (observations). We do this by using a function to &lt;strong&gt;read&lt;/strong&gt; the dataset from your computer and the &lt;code&gt;&amp;lt;-&lt;/code&gt; operator to put the data into the dataframe:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;states_df &amp;lt;- read_dta(&amp;quot;states.dta&amp;quot;) #You can say this as &amp;quot;states_df gets states.dta. i
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;states_df &amp;lt;- read_dta(&amp;quot;data/states.dta&amp;quot;) #You can say this as &amp;quot;states_df gets states.dta. i
 
     glimpse(states_df) #take a quick peek at your data, make sure it looks how you expect&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Rows: 50
@@ -228,17 +228,17 @@ library(haven) #Haven contains the read_dta() function; this allows us to read S
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Here is how you can make a density plot in base-R. I do not recommend this approach, but it is worthwhile learning it to build your understanding or R.
 #In your work, you are quite likely to come across older Rscripts which use these functions, and you should know how to read those.
 plot(density(states_df$womleg_2011))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#qplot is a function in the ggplot package that functions similarly to plot() in base-R
 #qplot picks the appropriate plot style automatically based on the number and type of variables that you input.
 #qplot is handy when you want to get a quick peek at the data, but you&amp;#39;re better off using ggplot() if you want to generate a publication quality visual.
 qplot(states_df$womleg_2011)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Here is a density plot of womleg_2011 in ggplot() this probably looks familiar to you from last semester
 ggplot(data = states_df, aes(x = womleg_2011)) +
     geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, these three approaches (&lt;code&gt;plot()&lt;/code&gt;, &lt;code&gt;qplot()&lt;/code&gt;, and &lt;code&gt;ggplot()&lt;/code&gt;) look quite different, but they all generate plots which look about the same. &lt;code&gt;ggplot()&lt;/code&gt; is the approach I recommend for almost every application. It’s very easy to extend, customize, and label your plot in ways that are difficult with &lt;code&gt;plot()&lt;/code&gt;, or &lt;code&gt;qplot()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Now let’s try making a scatterplot with &lt;code&gt;ggplot()&lt;/code&gt;. Here we’re using variables for percent of the legislature who are women and the percentage of unionized workers in the laborforce.&lt;/p&gt;
 &lt;/div&gt;
@@ -249,7 +249,7 @@ ggplot(data = states_df, aes(x = womleg_2011)) +
     labs(x = &amp;quot;Percent Workers Unionized (2010)&amp;quot;, #adding some nice labels
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;regression&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Regression&lt;/h3&gt;
@@ -305,7 +305,7 @@ bv_predict &amp;lt;- ggemmeans(bv_model, terms = &amp;quot;union10&amp;quot;)  #
     labs(x = &amp;quot;Percent Workers Unionized (2010)&amp;quot;, #adding some nice labels
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now let’s do the same thing with a multivariate model. We’ve added a control variable &lt;code&gt;cook_index&lt;/code&gt;, which shows states’ partisanship—low values indicate a state is more Republican, high values more Democratic. Using the function &lt;code&gt;ggemmeans()&lt;/code&gt; we can estimate the “effect” of union membership on women’s representation at different levels of partisanship. This lets us show the predicted “effect” of &lt;code&gt;x&lt;/code&gt; on &lt;code&gt;y&lt;/code&gt; at diffent levels of our control variable.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mv_model &amp;lt;- lm(womleg_2011 ~ union10 + cook_index, data = states_df) #run the regression just as before, adding cook_index to your formula
 summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
@@ -346,7 +346,7 @@ summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              color = &amp;quot;Cook Index&amp;quot;, #titling our legend
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../post/undergrad-workshop/index_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-03-29-r-workshop_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now, instead of one estimate, we have three—one for each tercile of our partisan cook index control variable. When we control for partisanship, the apparent positive relationship between union membership and women’s representation disappears.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -360,7 +360,7 @@ summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
       <guid>/post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/</guid>
       <description>
-&lt;script src=&#34;../post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;../rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Few topics are as often abused by pundits and political scientists as ideology—particularly as it relates to partisan polarization. Political scientists are uncharacteristically eager to problematize polarization and insinuate bold action to ameliorate—or at least avoid amplifying—polarization. In this post, I argue two related points. First, that ideological &lt;em&gt;extremity&lt;/em&gt; and ideological &lt;em&gt;consistency&lt;/em&gt; are not synonymous, nor even necessarily correlated. Second, scholars should reflect on the popularity of the polarization subfield relative to others when proposing and evaluating interventions. It is not necessarily that polarization is a uniquely concerning phenomenon, it may simply be that more people write articles about (and thus have found more concerns regarding) polarization. Scholars of polarization should carefully consider the potential downsides of anti-polarization interventions.&lt;/p&gt;
@@ -368,14 +368,14 @@ summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A definition of ideology which includes “extremity” as a necessary condition for “ideology” would be over-complicated, and normatively troubling. Practically, such a definition would make generalizable comparisons of ideology nearly impossible, as extremity is a wholly context dependent descriptor. Belief systems’ status as “ideologies” would vary election to election and time to time; while nothing of value would be gained over an extremity-naïve conception of ideology. Defining ideology on the basis of extremity would describe the mainstream of political opinion at any given time not only as the most &lt;em&gt;popular&lt;/em&gt; strain of thought, but as the &lt;em&gt;default&lt;/em&gt; political position—rhetorically divorced from the unsavory domains of dishonest ideologues to its left and right. Ideas from outside the status-quo are de-legitimized—not through critique of their programmatic content but by a semantic sleight of hand.&lt;/p&gt;
 &lt;div id=&#34;figure-1&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;strong&gt;&lt;em&gt;Figure 1&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;../post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-02-23-polarization_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Such is the political world created by sloppy application of words like “ideology” and “moderation”. These words are not antonyms. Rather, “ideology” is a noun and “moderation” an adjective which can sometimes be used to describe an ideology! Pointing this out is not (only) pedantry, but has important implications for the way polarization is (or should be) addressed. Figure 1 represents the distributions of three legislators’ issue preferences along a one-dimensional left-right scale. The mean of distributions &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; are -1, 0, and 1 respectively. Each distribution describes an ideology: one left, one right, one between. Though centrist, candidate &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;’s belief system is precisely as constrained as &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;—the standard deviation of each distribution is .1.&lt;/p&gt;
 &lt;p&gt;Assume polarization causes gridlock because the distributions of polarized legislators’ preferences do not overlap and suppose a reform is introduced to favor moderate candidates over extreme candidates. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; loses their election to a candidate with &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;’s issue preferences. Assuming &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; retains veto power, the reform has done little to ameliorate gridlock—there is no more overlap between &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; than between &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;. The means may be closer, but they still do not agree on any single issue.&lt;/p&gt;
 &lt;p&gt;This is not to say that reforms &lt;em&gt;cannot&lt;/em&gt; reduce gridlock, only to illustrate that a reduction in polarization does not guarantee a reduction in harm resulting from polarization. Scholars should consider not just “mean ideology” but the shape of actors’ preference distributions. In a legislature populated by less ideological voters (who have much more variable ideological preferences) as depicted in Figure 2, a reform that removed &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; would indeed be likely to reduce gridlock, though the legislators’ mean ideology are identical to those in Figure 1 each distribution is much wider. If scholars focus narrowly on mean preferences or other convenient, single-value descriptions of ideology (like self-placements or NOMINATE scores) there is no way to know if our world more closely resembles Figure 1 or Figure 2.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;figure-2&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;strong&gt;&lt;em&gt;Figure 2&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;../post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../post/2021-02-23-polarization_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The volume of polarization-centric work has the potential to induce myopia in social scientists, causing them to overestimate the importance and centrality of polarization as a sinister independent variable from which follows so many political ills. Polarization &lt;em&gt;may&lt;/em&gt; be a fundamental problem of American politics, or it may just be the subfield in which the most researchers look for problems. In centering polarization and treating it as a first-order normative concern, researchers may overlook or obfuscate other problems in our politics. Even if advantaging PACs would reduce polarization, it does not follow that such a reform would improve the political climate of the U.S.—to say nothing of the material outcomes produced by our political system.&lt;/p&gt;
 &lt;/div&gt;
 </description>

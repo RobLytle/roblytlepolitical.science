@@ -1,5 +1,5 @@
 ---
-title: Please, I'm Begging You&mdash;Stop Trying to Solve Polarization
+title: Please, I'm Begging You—Stop Trying to Solve Polarization
 author: Rob Lytle
 date: '2021-02-23'
 slug: please-i-m-begging-you-mdash-stop-trying-to-solve-polarization
@@ -33,7 +33,7 @@ library(ggridges)
 library(gridExtra)
 ```
 
-Few topics are as often abused by pundits and political scientists as ideology&mdash;particularly as it relates to partisan polarization. Political scientists are uncharacteristically eager to problematize polarization and insinuate bold action to ameliorate&mdash;or at least avoid amplifying&mdash;polarization. In this essay, I argue two related points. First, that ideological *extremity* and ideological *consistency* are not synonymous, nor even necessarily correlated. Second, scholars should consider the popularity of the polarization subfield relative to others when proposing and evaluating interventions. It is not necessarily that polarization is a uniquely concerning phenomenon, it may simply be that more people write articles about (and thus have found more concerns regarding) polarization. Scholars of polarization should carefully consider the potential downsides of anti-polarization interventions.
+Few topics are as often abused by pundits and political scientists as ideology&mdash;particularly as it relates to partisan polarization. Political scientists are uncharacteristically eager to problematize polarization and insinuate bold action to ameliorate&mdash;or at least avoid amplifying&mdash;polarization. In this post, I argue two related points. First, that ideological *extremity* and ideological *consistency* are not synonymous, nor even necessarily correlated. Second, scholars should reflect on the popularity of the polarization subfield relative to others when proposing and evaluating interventions. It is not necessarily that polarization is a uniquely concerning phenomenon, it may simply be that more people write articles about (and thus have found more concerns regarding) polarization. Scholars of polarization should carefully consider the potential downsides of anti-polarization interventions.
 
 Two oft-discussed effects of elite polarization include declining legislative productivity and a concomitant decline in the public's trust in government. Researchers and pundits often propose reforms intended to advantage moderates (often malapropistically referenced as "non-ideological") candidates over extreme ("ideological" candidates). Such a characterization fundamentally misrepresents what it means to be "ideological". Breadth&mdash;the number of issue areas encompassed by a belief system&mdash;and constraint, the correlation between positions related to area *i* and area *j* are the defining characteristics of ideology. The extremity of a belief system is incidental as to whether the system constitutes an ideology. 
 

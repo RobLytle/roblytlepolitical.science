@@ -1,0 +1,362 @@
+---
+title: "Getting Started with RStudio"
+author: "Rob Lytle"
+date: '2021-03-16'
+output:
+  html_document:
+    df_print: paged
+  pdf_document: null
+documentclass: paper
+fontsize: 12
+header-includes:
+- \usepackage[margin=1.2in]{geometry}
+- \usepackage{caption}
+- \usepackage{amsmath}
+- \usepackage{mathrsfs}
+- \usepackage{float}
+- \usepackage{natbib}
+- \bibliographystyle{apsr}
+- \usepackage{graphicx}
+- \graphicspath{ {../fig/} }
+- \usepackage{setspace}
+- \usepackage[super]{nth}
+- \usepackage{booktabs}
+- \usepackage{makecell}
+- \usepackage{amsmath}
+- \usepackage{dcolumn}
+- \usepackage{hyperref}
+- \setlength{\parindent}{4em}
+- \setlength{\parskip}{0em}
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="many-roads-to-success" class="section level1">
+<h1>Many <code>R</code>oads to Success!</h1>
+<p>When first learning to code in R students often feel like there is exactly one way to get to a desired result. One way to load data, one way to draw a density plot, one way to run a regression—this is (emphatically) not true! In almost every case, there are multiple perfectly legitimate ways to conduct an analysis and generate the output you seek, which is great news for a new student! When you have a limited knowledge of R, it is easy to think of coding as a collection of very discrete tasks, where you have one set of functions and syntax to make a scatterplot, and a totally different set of functions and syntax to import data or run a regression. In reality, there is much more similarity between these tasks than difference.</p>
+<p>Getting better at R comes from letting yourself experiment with your coding strategy, learning where you can apply techniques from other applications. This may seem confusing right now—that’s fine! This document is intended to get you up to speed with the basics of R and to illustrate how much freedom you have in conducting analyses with RStudio.</p>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<p>One of the reasons RStudio has so many different overlapping approaches to problems is because of <strong>packages</strong>. A package is a library of functions that you <strong>install</strong> and <strong>load</strong> to extend RStudio’s functionality. A function which is not part of an external package is said to be part of base-R, that is that it comes built in to R by default. Without a doubt, the most important package is <code>tidyverse</code>, a collection of smaller packages that improve on every aspect of base-R, from loading data, cleaning data, visualizing data, etc. <code>tidyverse</code> was first published in 2013, so older RScripts are likely not to make use of the package—which is evidenced by the complexity (and length) of their code.</p>
+</div>
+</div>
+<div id="writing-a-script" class="section level1">
+<h1>Writing a script</h1>
+<div id="project-directory" class="section level2">
+<h2>Project Directory</h2>
+<p>Before you start coding, you need to create a new project directory. A <code>.proj</code> file simply tells RStudio to start looking for files from whichever directory your <code>.proj</code> file is in—it’s the equivalent of using the <code>setwd(...)</code> function at the top of a script, but you only have to do it one time, even if you have multiple scripts that you’re working in. The other benefit, is that you can share the project directory with an instructor or colleague and your code will function perfectly. If you set a working directory, the person to whom you share a script will have to manually set their own working directory, which can be frustrating, inefficient, and error-prone. It’s a good habit to <strong>always</strong> work in a project environment.</p>
+<p>See the screenshots below to set up your project.</p>
+<div class="figure">
+<img src="new-project.PNG" alt="" />
+<p class="caption">“Creating a new project”</p>
+</div>
+<div class="figure">
+<img src="new-directory.PNG" alt="" />
+<p class="caption">“Place the project in a new directory”</p>
+</div>
+<div class="figure">
+<img src="new-project-3.PNG" alt="" />
+<p class="caption">“We just need a regular project”</p>
+</div>
+<div class="figure">
+<img src="new-directory.PNG" alt="" />
+<p class="caption">“Give your project a name, and tell RStudio where to put it”</p>
+</div>
+<p>Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), givign it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you <strong>must</strong> write it in your script, not the console or terminal window below.</p>
+<div class="figure">
+<img src="blank-project.PNG" alt="" />
+<p class="caption">“Click the "new script" button in the upper left corner”</p>
+</div>
+</div>
+<div id="download-your-data." class="section level2">
+<h2>Download your data.</h2>
+<p>For this project, download the file <code>states.dta</code> from the “datasets” folder on the course canvas. Save it to the project directory you created above (or drag and drop it from your downloads folder).</p>
+</div>
+<div id="load-packages" class="section level2">
+<h2>Load packages</h2>
+<p>Now that we have a script, we can load our packages, this is done with the <code>library()</code> function. Here we are loading <code>tidyverse</code> and <code>haven</code>. <code>haven</code> is a small package that lets us read Stata datasets (<code>.dta</code>). If you don’t have these installed you can do so by installing them through the “Packages” tab in the bottom right of the screen (as in the screenshots below) or by typing <code>install.packages(c("tidyverse", "haven"))</code> in the <strong>console</strong>. You only need to install packages once; but you need to <strong>load</strong> them every time you start RStudio.</p>
+<pre class="r"><code>#Loading packages
+library(tidyverse) #We will load tidyverse in every single R script we write. It is invaluable
+library(haven) #Haven contains the read_dta() function; this allows us to read Stata (.dta) files</code></pre>
+<pre><code>## Warning: package &#39;haven&#39; was built under R version 4.0.4</code></pre>
+<pre class="r"><code>library(ggeffects) #ggeffects contains useful functions for calculating and plotting predicted values</code></pre>
+<p>You might get a warning that one or more of your packages was built under a different version of R. This is probably not an issue and you shouldn’t worry about it!</p>
+</div>
+<div id="load-your-data" class="section level2">
+<h2>Load your data</h2>
+<p>To load data in R, it needs to be in a <strong>dataframe</strong>—an <strong>object</strong> made up of columns (variables) and rows (observations). We do this by using a function to <strong>read</strong> the dataset from your computer and the <code>&lt;-</code> operator to put the data into the dataframe:</p>
+<pre class="r"><code>states_df &lt;- read_dta(&quot;states.dta&quot;) #You can say this as &quot;states_df gets states.dta. i
+
+    glimpse(states_df) #take a quick peek at your data, make sure it looks how you expect</code></pre>
+<pre><code>## Rows: 50
+## Columns: 137
+## $ state             &lt;chr&gt; &quot;Alabama&quot;, &quot;Alaska&quot;, &quot;Arizona&quot;, &quot;Arkansas&quot;, &quot;Califor~
+## $ state_abbr        &lt;chr&gt; &quot;AL&quot;, &quot;AK&quot;, &quot;AZ&quot;, &quot;AR&quot;, &quot;CA&quot;, &quot;CO&quot;, &quot;CT&quot;, &quot;DE&quot;, &quot;FL&quot;~
+## $ gundeath_rate16   &lt;dbl&gt; 21.5, 23.3, 5.0, 17.8, 7.9, 14.3, 4.6, 11.0, 12.6, 1~
+## $ gun_murder10      &lt;dbl&gt; 2.8, 2.7, 3.6, 3.2, 3.4, 1.3, 2.7, 4.2, 3.8, 3.9, 0.~
+## $ Abort_rank3       &lt;dbl+lbl&gt; 2, 3, 1, 1, 3, 2, 3, 2, 2, 1, 3, 2, 3, 1, 3, 1, ~
+## $ Abortion_rank12   &lt;dbl&gt; 20, 35, 5, 4, 49, 25, 45, 30, 26, 9, 42, 22, 36, 7, ~
+## $ Adv_or_more       &lt;dbl&gt; 7.7, 9.0, 9.3, 6.1, 10.7, 12.7, 15.5, 11.4, 9.0, 9.9~
+## $ BA_or_more        &lt;dbl&gt; 22.0, 26.6, 25.6, 18.9, 29.9, 35.9, 35.6, 28.7, 25.3~
+## $ Cig_tax12         &lt;dbl&gt; 0.425, 2.000, 2.000, 1.150, 0.870, 0.840, 3.400, 1.6~
+## $ Cig_tax12_3       &lt;dbl+lbl&gt; 1, 3, 3, 2, 2, 2, 3, 2, 2, 1, 3, 1, 3, 2, 2, 1, ~
+## $ Conserv_advantage &lt;dbl&gt; 36.0, 21.3, 19.5, 26.7, 6.3, 15.7, 1.8, 6.3, 17.2, 2~
+## $ Conserv_public    &lt;dbl&gt; 44.7, 43.1, 36.0, 45.2, 30.8, 36.9, 27.4, 32.3, 36.8~
+## $ Dem_advantage     &lt;dbl&gt; -14.6, -12.2, -3.5, -1.4, 14.9, -2.4, 17.0, 15.9, 4.~
+## $ Govt_worker       &lt;dbl&gt; 17.5, 28.0, 15.5, 17.6, 14.9, 15.7, 15.9, 16.1, 14.5~
+## $ Gun_rank3         &lt;dbl+lbl&gt; 2, 3, 3, 3, 1, 1, 1, 2, 3, 2, 1, 3, 1, 3, 2, 3, ~
+## $ Gun_rank11        &lt;dbl&gt; 17, 50, 50, 39, 1, 15, 5, 18, 41, 22, 6, 47, 9, 39, ~
+## $ Gun_scale11       &lt;dbl&gt; 14, 0, 0, 4, 81, 15, 58, 13, 3, 8, 50, 2, 35, 4, 7, ~
+## $ HR_cons_rank11    &lt;dbl&gt; 151.7143, 200.0000, 155.5714, 132.5000, 274.2885, 16~
+## $ HR_conserv11      &lt;dbl&gt; 65.61905, 55.66667, 62.59524, 69.33333, 54.78931, 59~
+## $ HR_lib_rank11     &lt;dbl&gt; 277.5714, 228.0000, 269.8571, 295.2500, 152.4038, 26~
+## $ HR_liberal11      &lt;dbl&gt; 34.38095, 44.33333, 37.40476, 30.66667, 81.02201, 40~
+## $ HS_or_more        &lt;dbl&gt; 82.1, 91.4, 84.2, 82.4, 80.6, 89.3, 88.6, 87.4, 85.3~
+## $ Obama2012         &lt;dbl&gt; 38.36, 40.81, 44.45, 36.88, 60.19, 51.45, 58.06, 58.~
+## $ Obama_win12       &lt;dbl+lbl&gt; 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, ~
+## $ Pop2000           &lt;dbl&gt; 4447100, 626932, 5130632, 2673400, 33871648, 4301261~
+## $ Pop2010           &lt;dbl&gt; 4779736, 710231, 6392017, 2915918, 37253956, 5029196~
+## $ Pop2010_hun_thou  &lt;dbl&gt; 47.79736, 7.10231, 63.92017, 29.15918, 372.53956, 50~
+## $ Popchng0010       &lt;dbl&gt; 332636, 83299, 1261385, 242518, 3382308, 727935, 168~
+## $ PopchngPct        &lt;dbl&gt; 7.5, 13.3, 24.6, 9.1, 10.0, 16.9, 4.9, 14.6, 17.6, 1~
+## $ Pot_policy        &lt;dbl+lbl&gt; 2, 3, 3, 0, 4, 4, 4, 3, 1, 0, 3, 0, 1, 0, 1, 0, ~
+## $ ProChoice         &lt;dbl&gt; 36, 58, 56, 40, 65, 61, 68, 63, 58, 52, 57, 41, 58, ~
+## $ ProLife           &lt;dbl&gt; 54, 37, 39, 55, 28, 34, 26, 31, 36, 43, 35, 55, 33, ~
+## $ Relig_Cath        &lt;dbl&gt; 6.6, 14.6, 27.3, 5.9, 31.9, 21.9, 41.5, 25.6, 25.4, ~
+## $ Relig_Prot        &lt;dbl&gt; 79.3, 50.0, 43.3, 78.6, 37.8, 46.1, 32.1, 52.0, 51.2~
+## $ Relig_high        &lt;dbl&gt; 55.7, 31.3, 36.6, 52.3, 34.5, 33.5, 30.5, 35.2, 37.6~
+## $ Relig_low         &lt;dbl&gt; 14.3, 39.5, 33.9, 18.7, 36.6, 39.3, 40.4, 33.7, 30.7~
+## $ Religiosity3      &lt;dbl+lbl&gt; 3, 1, 2, 3, 1, 1, 1, 2, 2, 3, 1, 3, 2, 2, 2, 3, ~
+## $ Romney2012        &lt;dbl&gt; 60.55, 54.80, 53.48, 60.57, 37.09, 46.09, 40.72, 39.~
+## $ Smokers12         &lt;dbl&gt; 25, 24, 21, 26, 15, 20, 18, 21, 21, 21, 16, 18, 21, ~
+## $ StateID           &lt;chr&gt; &quot;AL&quot;, &quot;AK&quot;, &quot;AZ&quot;, &quot;AR&quot;, &quot;CA&quot;, &quot;CO&quot;, &quot;CT&quot;, &quot;DE&quot;, &quot;FL&quot;~
+## $ TO_0812           &lt;dbl&gt; -2.9, -9.4, -3.1, -2.9, -6.5, 0.5, -6.3, -3.5, -4.0,~
+## $ Uninsured_pct     &lt;dbl&gt; 18.8, 21.8, 20.5, 21.9, 23.2, 17.1, 9.9, 9.6, 22.8, ~
+## $ abort_rate05      &lt;dbl&gt; 11.9, 13.6, 16.0, 8.3, 27.1, 16.1, 23.6, 28.8, 26.8,~
+## $ abort_rate08      &lt;dbl&gt; 12.0, 12.0, 15.2, 8.7, 27.6, 15.7, 24.6, 40.0, 27.2,~
+## $ abortlaw3         &lt;dbl+lbl&gt; 2, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 3, 2, 3, 2, 2, ~
+## $ abortlaw10        &lt;dbl&gt; 8, 5, 6, 9, 4, 4, 4, 5, 7, 9, 2, 9, 6, 10, 6, 8, 7, ~
+## $ alcohol           &lt;dbl&gt; 2.01, 3.02, 2.31, 1.83, 2.33, 2.68, 2.34, 3.13, 2.61~
+## $ attend_pct        &lt;dbl&gt; 52, 22, 29, 50, 33, 29, 30, 35, 35, 45, 35, 45, 39, ~
+## $ battle04          &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, ~
+## $ blkleg            &lt;dbl&gt; 25, 2, 1, 11, 5, 4, 7, 5, 14, 21, 1, 0, 16, 7, 2, 4,~
+## $ blkpct04          &lt;dbl&gt; 26.4, 3.6, 3.5, 15.8, 6.8, 4.1, 10.1, 20.4, 15.7, 29~
+## $ blkpct08          &lt;dbl&gt; 26.4, 4.3, 4.2, 15.8, 6.7, 4.3, 10.3, 20.9, 15.9, 30~
+## $ blkpct10          &lt;dbl&gt; 26.8, 4.7, 5.0, 16.1, 7.2, 5.0, 11.3, 22.9, 17.0, 31~
+## $ bush00            &lt;dbl&gt; 56.48376, 58.62096, 51.02114, 51.30720, 41.65137, 50~
+## $ bush04            &lt;dbl&gt; 62.46, 61.07, 54.83, 54.31, 44.36, 51.71, 43.95, 45.~
+## $ carfatal          &lt;dbl&gt; 24.9, 17.4, 20.3, 25.6, 12.1, 17.3, 10.1, 15.0, 19.1~
+## $ carfatal07        &lt;dbl&gt; 25.9, 15.2, 17.6, 23.7, 11.7, 12.3, 8.7, 13.6, 18.1,~
+## $ cig_tax           &lt;dbl&gt; 0.425, 2.000, 2.000, 0.590, 0.870, 0.840, 2.000, 1.1~
+## $ cig_tax_3         &lt;dbl+lbl&gt; 1, 3, 3, 1, 2, 2, 3, 2, 1, 1, 3, 1, 2, 2, 2, 2, ~
+## $ cigarettes        &lt;dbl&gt; 9.41, 6.22, 2.40, 8.51, 3.69, 5.86, 5.47, 17.12, 6.7~
+## $ college           &lt;dbl&gt; 21.1, 26.7, 24.3, 19.1, 29.1, 34.7, 34.6, 27.6, 25.1~
+## $ conpct_m          &lt;dbl&gt; 40.67797, 36.32479, 33.33333, 38.87755, 28.46612, 32~
+## $ cons_hr06         &lt;dbl&gt; 77.71429, 72.00000, 69.00000, 56.25000, 37.33962, 63~
+## $ cons_hr09         &lt;dbl&gt; 72.00, 75.00, 49.50, 28.50, 35.09, 30.29, 1.60, 56.0~
+## $ cook_index        &lt;dbl&gt; -13.2, -13.4, -6.1, -8.8, 7.4, -0.2, 7.1, 7.0, -1.8,~
+## $ cook_index3       &lt;dbl+lbl&gt; 1, 1, 2, 1, 3, 2, 3, 3, 2, 2, 3, 1, 3, 2, 2, 1, ~
+## $ defexpen          &lt;dbl&gt; 1757, 3556, 1771, 530, 1106, 1139, 2453, 690, 938, 1~
+## $ demHR11           &lt;dbl&gt; 14.28571, 0.00000, 28.57143, 25.00000, 64.15094, 42.~
+## $ dem_hr09          &lt;dbl&gt; 42.85714, 0.00000, 62.50000, 75.00000, 64.15094, 71.~
+## $ demnat06          &lt;dbl&gt; 22.22222, 0.00000, 20.00000, 83.33333, 63.63636, 44.~
+## $ dempct_m          &lt;dbl&gt; 38.87628, 26.14108, 31.93651, 43.06358, 41.29714, 29~
+## $ demstate06        &lt;dbl&gt; 60.71429, 43.33333, 44.44444, 75.55556, 60.83333, 59~
+## $ demstate09        &lt;dbl&gt; 57.85714, 46.66667, 41.11111, 72.59259, 64.16667, 59~
+## $ demstate13        &lt;dbl&gt; 35.71429, 36.66667, 41.11111, 46.66667, 66.66667, 55~
+## $ density           &lt;dbl&gt; 94.4, 1.2, 56.3, 56.0, 239.1, 48.5, 738.1, 460.8, 35~
+## $ division          &lt;dbl+lbl&gt; 6, 9, 8, 7, 9, 8, 1, 5, 5, 5, 9, 8, 3, 3, 4, 4, ~
+## $ earmarks_pcap     &lt;dbl&gt; 38.9, 425.5, 20.9, 26.7, 12.5, 22.5, 14.8, 25.7, 14.~
+## $ evm               &lt;dbl&gt; 9, 3, 10, 6, 0, 0, 0, 0, 0, 15, 0, 4, 0, 0, 0, 6, 8,~
+## $ evo               &lt;dbl&gt; 0, 0, 0, 0, 55, 9, 7, 3, 27, 0, 4, 0, 21, 11, 7, 0, ~
+## $ evo2012           &lt;dbl&gt; 0, 0, 0, 0, 55, 9, 7, 3, 29, 0, 4, 0, 20, 0, 6, 0, 0~
+## $ evr2012           &lt;dbl&gt; 9, 3, 11, 6, 0, 0, 0, 0, 0, 16, 0, 4, 0, 11, 0, 6, 8~
+## $ gay_policy        &lt;dbl+lbl&gt; 4, 3, 3, 4, 2, 2, 1, 3, 4, 4, 2, 4, 2, 3, 1, 4, ~
+## $ gay_policy2       &lt;dbl+lbl&gt; 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, ~
+## $ gay_policy_con    &lt;dbl+lbl&gt; 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, ~
+## $ gay_support       &lt;dbl&gt; 44, 56, 58, 44, 64, 61, 65, 60, 57, 51, 62, 47, 60, ~
+## $ gay_support3      &lt;dbl+lbl&gt; 1, 2, 2, 1, 3, 3, 3, 2, 2, 1, 3, 1, 2, 2, 2, 2, ~
+## $ gb_win00          &lt;dbl+lbl&gt; 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, ~
+## $ gb_win04          &lt;dbl+lbl&gt; 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, ~
+## $ gore00            &lt;dbl&gt; 41.56650, 27.66634, 44.73459, 45.86426, 53.44957, 42~
+## $ gun_check         &lt;dbl&gt; 9024.683, 12016.091, 5313.863, 8443.070, 3040.222, 8~
+## $ gun_dealer        &lt;dbl&gt; 47.36663, 139.25047, 45.44731, 67.42302, 21.60307, 5~
+## $ gun_rank_rev      &lt;dbl&gt; 30, 6, 13, 13, 48, 32, 46, 38, 13, 16, 41, 13, 41, 1~
+## $ gunlaw_rank       &lt;dbl&gt; 19, 43, 36, 36, 1, 17, 3, 11, 36, 33, 8, 36, 8, 31, ~
+## $ gunlaw_rank3_rev  &lt;dbl+lbl&gt; 2, 1, 1, 1, 3, 3, 3, 3, 1, 2, 3, 1, 3, 2, 3, 2, ~
+## $ gunlaw_scale      &lt;dbl&gt; 15, 4, 6, 6, 79, 16, 54, 22, 6, 7, 43, 6, 28, 8, 16,~
+## $ hispanic04        &lt;dbl&gt; 2.2, 4.9, 28.0, 4.4, 34.7, 19.1, 10.6, 5.8, 19.0, 6.~
+## $ hispanic08        &lt;dbl&gt; 2.9, 6.1, 30.1, 5.6, 36.6, 20.2, 12.0, 6.8, 21.0, 8.~
+## $ hispanic10        &lt;dbl&gt; 3.9, 5.5, 29.6, 6.4, 37.6, 20.7, 13.4, 8.2, 22.5, 8.~
+## $ indpct_m          &lt;dbl&gt; 29.96595, 43.56846, 29.71429, 35.93449, 25.82884, 37~
+## $ kerry04           &lt;dbl&gt; 36.84, 35.52, 44.37, 44.55, 54.31, 47.04, 54.31, 53.~
+## $ libpct_m          &lt;dbl&gt; 16.82809, 17.94872, 19.23584, 16.83673, 24.20596, 21~
+## $ mccain08          &lt;dbl&gt; 60.32, 59.42, 53.39, 58.72, 36.91, 44.71, 38.22, 36.~
+## $ modpct_m          &lt;dbl&gt; 42.49395, 45.72650, 47.43083, 44.28571, 47.32791, 45~
+## $ nader00           &lt;dbl&gt; 1.0996404, 10.0668861, 2.9794075, 1.4559857, 3.81827~
+## $ obama08           &lt;dbl&gt; 38.74, 37.89, 44.91, 38.86, 60.94, 53.66, 60.59, 61.~
+## $ obama_win08       &lt;dbl+lbl&gt; 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, ~
+## $ over64            &lt;dbl&gt; 13.2, 6.4, 12.7, 13.8, 10.7, 9.8, 13.5, 13.1, 16.8, ~
+## $ permit            &lt;dbl&gt; 27.6, NA, 46.2, 21.1, 52.8, 46.3, 45.3, NA, 37.8, 27~
+## $ pop_18_24         &lt;dbl&gt; 10.004388, 11.144578, 9.614413, 10.075567, 9.952397,~
+## $ pop_18_24_10      &lt;dbl&gt; 10.020921, 10.563380, 9.903004, 9.739369, 10.530413,~
+## $ prcapinc          &lt;dbl&gt; 27795, 34454, 28442, 25725, 35019, 36063, 45398, 358~
+## $ region            &lt;dbl+lbl&gt; 3, 4, 4, 3, 4, 4, 1, 3, 3, 3, 4, 4, 2, 2, 2, 2, ~
+## $ relig_import      &lt;dbl&gt; 58.47953, NA, 33.20000, 53.13433, 28.78619, 26.08696~
+## $ religiosity       &lt;dbl&gt; -13, -177, -140, -23, -147, -163, -170, -109, -84, -~
+## $ reppct_m          &lt;dbl&gt; 31.15778, 30.29046, 38.34921, 21.00193, 32.87402, 32~
+## $ rtw               &lt;dbl+lbl&gt; 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, ~
+## $ secularism        &lt;dbl&gt; 13, 177, 140, 23, 147, 163, 170, 109, 84, 39, 101, 7~
+## $ secularism3       &lt;dbl+lbl&gt; 1, 3, 3, 1, 3, 3, 3, 2, 2, 1, 2, 2, 2, 1, 2, 1, ~
+## $ seniority_sen2    &lt;dbl+lbl&gt; 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+## $ south             &lt;dbl+lbl&gt; 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, ~
+## $ to_0004           &lt;dbl&gt; 4.20, -12.39, -2.32, 3.31, 6.63, 0.82, 4.47, 2.53, 8~
+## $ to_0408           &lt;dbl&gt; 4.6, -0.8, 1.9, -0.2, 2.9, 3.1, 2.2, 2.0, 3.1, 5.2, ~
+## $ trnout00          &lt;dbl&gt; 50.59, 67.19, 44.64, 46.93, 54.61, 57.55, 60.86, 57.~
+## $ trnout04          &lt;dbl&gt; 54.79, 54.80, 42.32, 50.24, 61.24, 58.37, 65.33, 59.~
+## $ unemploy          &lt;dbl&gt; 5.8, 7.5, 5.1, 5.9, 6.2, 5.4, 4.9, 3.9, 4.6, 4.7, 3.~
+## $ union04           &lt;dbl&gt; 9.7, 20.1, 6.3, 4.8, 16.5, 8.4, 15.3, 12.4, 6.0, 6.4~
+## $ union07           &lt;dbl&gt; 9.5, 23.8, 8.8, 5.4, 16.7, 8.7, 15.6, 12.0, 5.9, 4.4~
+## $ union10           &lt;dbl&gt; 10.9, 22.3, 6.5, 4.2, 17.2, 7.0, 17.3, 11.9, 5.8, 4.~
+## $ urban             &lt;dbl&gt; 55.4, 65.6, 88.2, 52.5, 94.4, 84.5, 87.7, 80.1, 89.3~
+## $ vep00_turnout     &lt;dbl&gt; 51.6, 68.1, 45.6, 47.9, 55.7, 57.5, 61.9, 59.0, 55.9~
+## $ vep04_turnout     &lt;dbl&gt; 57.2, 69.1, 54.1, 53.6, 58.8, 66.7, 65.0, 64.2, 64.4~
+## $ vep08_turnout     &lt;dbl&gt; 61.8, 68.3, 56.0, 53.4, 61.7, 69.8, 67.2, 66.2, 67.5~
+## $ vep12_turnout     &lt;dbl&gt; 58.9, 58.9, 52.9, 50.5, 55.2, 70.3, 60.9, 62.7, 63.5~
+## $ womleg_2007       &lt;dbl&gt; 12.9, 21.7, 34.4, 20.7, 28.3, 35.0, 28.3, 30.6, 23.8~
+## $ womleg_2010       &lt;dbl&gt; 12.9, 21.7, 31.1, 23.0, 27.5, 37.0, 31.6, 25.8, 23.1~
+## $ womleg_2011       &lt;dbl&gt; 13.6, 23.3, 34.4, 22.2, 28.3, 41.0, 29.9, 25.8, 25.6~
+## $ abbr_merge        &lt;dbl+lbl&gt; 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ~</code></pre>
+<p>Above, we used the function <code>read_dta()</code> from the <code>haven</code> package, because our dataset is a <code>.dta</code> file. If we had a <code>.csv</code> or <code>.rds</code> file, we would use the functions <code>read_csv()</code> or <code>read_rds()</code> from `tidyverse.</p>
+<p>You can name your dataframe anything (besides <code>TRUE</code> and <code>FALSE</code>), but try to make it descriptive to you. Since our dataset is called <code>states.dta</code>, I called the dataframe <code>states_df</code> because it is short and descriptive.</p>
+</div>
+<div id="start-visualizing-your-data" class="section level2">
+<h2>Start visualizing your data</h2>
+<div id="density-plots" class="section level3">
+<h3>Density plots</h3>
+<p>Let’s make a few density plots of the variable <code>womleg_2011</code>, the proportion of women in the state legislature in the year 2011.</p>
+<pre class="r"><code>#Here is how you can make a density plot in base-R. I do not recommend this approach, but it is worthwhile learning it to build your understanding or R.
+#In your work, you are quite likely to come across older Rscripts which use these functions, and you should know how to read those.
+plot(density(states_df$womleg_2011))</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>#qplot is a function in the ggplot package that functions similarly to plot() in base-R
+#qplot picks the appropriate plot style automatically based on the number and type of variables that you input.
+#qplot is handy when you want to get a quick peek at the data, but you&#39;re better off using ggplot() if you want to generate a publication quality visual.
+qplot(states_df$womleg_2011)</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<pre class="r"><code># Here is a density plot of womleg_2011 in ggplot() this probably looks familiar to you from last semester
+ggplot(data = states_df, aes(x = womleg_2011)) +
+    geom_density()</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-3.png" width="672" /></p>
+<p>As you can see, these three approaches (<code>plot()</code>, <code>qplot()</code>, and <code>ggplot()</code>) look quite different, but they all generate plots which look about the same. <code>ggplot()</code> is the approach I recommend for almost every application. It’s very easy to extend, customize, and label your plot in ways that are difficult with <code>plot()</code>, or <code>qplot()</code>.</p>
+<p>Now let’s try making a scatterplot with <code>ggplot()</code>. Here we’re using variables for percent of the legislature who are women and the percentage of unionized workers in the laborforce.</p>
+</div>
+<div id="scatterplot" class="section level3">
+<h3>Scatterplot</h3>
+<pre class="r"><code>ggplot(data = states_df, aes(x = union10, y = womleg_2011)) +
+    geom_point() +#the geom_point() argument tells ggplot to make a scatterplot with these data
+    labs(x = &quot;Percent Workers Unionized (2010)&quot;, #adding some nice labels
+             y = &quot;Percent of Legislature Women (2011)&quot;,
+             title = &quot;Unionization and Women&#39;s Representation&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+### Regression</p>
+<p>Taking those same variables, let’s run a bivariate regression analysis. A linear regression is done with the function <code>lm()</code>. The first argument in <code>lm()</code> is the regression formula. Write your <strong>dependent</strong> (outcome) variable on the left hand side and our <strong>independent</strong> variable on the right hand side. In place of <code>=</code>, we have to use the <code>~</code> in the formula (since <code>=</code> already means something to R).</p>
+<pre class="r"><code>bv_model &lt;- lm(womleg_2011 ~ union10, data = states_df) #running the regression and putting it in an object
+summary(bv_model)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = womleg_2011 ~ union10, data = states_df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -11.5090  -4.6032  -0.3062   4.0011  19.0342 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  19.0068     1.9566   9.714 6.49e-13 ***
+## union10       0.4227     0.1538   2.749  0.00841 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 6.234 on 48 degrees of freedom
+## Multiple R-squared:  0.136,  Adjusted R-squared:  0.118 
+## F-statistic: 7.555 on 1 and 48 DF,  p-value: 0.008407</code></pre>
+<p><code>summary(bv_model)</code> returns lots of useful information about our regression. We see the estimate of the coefficient (the <strong>slope</strong> of our line). In this case, our coefficient estimate tells us that a one unit increase in union membership is associated with a <code>.4227</code> unit increase in women’s descriptive representation. We also see the p-value, which tells us the probability of observing a relationship as (or more) extreme than this one by chance. In other words, if the <strong>null hypothesis</strong> is true, we would expect to find an association as strong or stronger than .4227 about <span class="math inline">\(.8\%\)</span> of the time. This is a <strong>statistically significant</strong> result.</p>
+<pre class="r"><code>#running some predictions. Predicting the percent of women in the legislature at min/max valu
+predict(bv_model, data.frame(union10 = min(states_df$union10))) #min() and max() are functions that return the min/max of a variable</code></pre>
+<pre><code>##        1 
+## 20.31722</code></pre>
+<pre class="r"><code>predict(bv_model, data.frame(union10 = max(states_df$union10)))</code></pre>
+<pre><code>##        1 
+## 29.65922</code></pre>
+<pre class="r"><code>#lets plot this line in our ggplot()
+
+#create a dataframe containing all values of the regression line
+bv_predict &lt;- ggemmeans(bv_model, terms = &quot;union10&quot;)  #Here you use quotation marks around the column. This is an exception to the rule---i&#39;m not sure why!</code></pre>
+<pre><code>## Loading required namespace: emmeans</code></pre>
+<pre class="r"><code>glimpse(bv_predict)</code></pre>
+<pre><code>## Rows: 24
+## Columns: 6
+## $ x         &lt;int&gt; 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,~
+## $ predicted &lt;dbl&gt; 20.27495, 20.69766, 21.12038, 21.54309, 21.96581, 22.38852, ~
+## $ std.error &lt;dbl&gt; 1.5586346, 1.4344500, 1.3165308, 1.2067151, 1.1074163, 1.021~
+## $ conf.low  &lt;dbl&gt; 17.14110, 17.81351, 18.47332, 19.11683, 19.73920, 20.33425, ~
+## $ conf.high &lt;dbl&gt; 23.40879, 23.58182, 23.76744, 23.96936, 24.19242, 24.44280, ~
+## $ group     &lt;fct&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ~</code></pre>
+<p><code>glimpse()</code>ing <code>bv_predict</code>, we see several columns. <code>x</code> is simply all the x values at which we have observations and <code>predicted</code> is the <strong>estimated y value of the regression line</strong>. <code>std.error</code> is the standard error of the estimate. <code>conf.low</code> and <code>conf.high</code> are the upper and lower confidence intervals. We’ll cover <code>group</code> a bit later.</p>
+<p>Now, we can add this prediction to our <code>ggplot()</code>, by adding our predicted dataframe to <code>geom_line()</code>! In <code>ggplot()</code>, you can call more than one dataframe by adding the <code>data = ...</code> and <code>aes()</code> arguments to your <code>geom_*</code>. You don’t need to do this too often, but is helpful in this case. If you don’t call <code>data =</code> or <code>aes()</code> in your geometry, the <code>geom_*()</code> argument will simply use whatever data and aesthetics you called initially.</p>
+<p>To add your regression line to the scatterplot, you can copy-and-paste your scatterplot code from above and add <code>geom_line(data = bv_predict, aes(x = x, y  = predicted))</code>, like so. Remember to add a <code>+</code> to each function except for the last.</p>
+<pre class="r"><code>ggplot(data = states_df, aes(x = union10, y = womleg_2011)) +
+    geom_point() +#the geom_point() argument tells ggplot to make a scatterplot with these data
+    geom_line(data = bv_predict, aes(x = x, y  = predicted)) +
+    labs(x = &quot;Percent Workers Unionized (2010)&quot;, #adding some nice labels
+             y = &quot;Percent of Legislature Women (2011)&quot;,
+             title = &quot;Unionization and Women&#39;s Representation&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Now let’s do the same thing with a multivariate model. We’ve added a control variable <code>cook_index</code>, which shows states’ partisanship—low values indicate a state is more Republican, high values more Democratic. Using the function <code>ggemmeans()</code> we can estimate the “effect” of union membership on women’s representation at different levels of partisanship. This lets us show the predicted “effect” of <code>x</code> on <code>y</code> at diffent levels of our control variable.</p>
+<pre class="r"><code>mv_model &lt;- lm(womleg_2011 ~ union10 + cook_index, data = states_df) #run the regression just as before, adding cook_index to your formula
+summary(mv_model)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = womleg_2011 ~ union10 + cook_index, data = states_df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -12.1629  -4.0108  -0.3438   2.3514  15.9817 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 25.35596    2.26298  11.205 7.19e-15 ***
+## union10     -0.03492    0.17146  -0.204 0.839506    
+## cook_index   0.46614    0.11086   4.205 0.000116 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 5.37 on 47 degrees of freedom
+## Multiple R-squared:  0.3722, Adjusted R-squared:  0.3455 
+## F-statistic: 13.93 on 2 and 47 DF,  p-value: 1.776e-05</code></pre>
+<pre class="r"><code>mv_predict &lt;- ggemmeans(mv_model, terms = c(&quot;union10&quot;, &quot;cook_index&quot;)) #since we have two terms we have to wrap them in the c() function. We are giving `ggemmeans()` a list, not a single value
+    glimpse(mv_predict)</code></pre>
+<pre><code>## Rows: 72
+## Columns: 6
+## $ x         &lt;int&gt; 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, ~
+## $ predicted &lt;dbl&gt; 19.92320, 24.09984, 28.27648, 19.88828, 24.06492, 28.24156, ~
+## $ std.error &lt;dbl&gt; 1.3453077, 1.6218310, 2.3289851, 1.2506266, 1.4725254, 2.178~
+## $ conf.low  &lt;dbl&gt; 17.21679, 20.83713, 23.59116, 17.37234, 21.10258, 23.85894, ~
+## $ conf.high &lt;dbl&gt; 22.62961, 27.36254, 32.96179, 22.40422, 27.02726, 32.62417, ~
+## $ group     &lt;fct&gt; -11.43, -2.47, 6.49, -11.43, -2.47, 6.49, -11.43, -2.47, 6.4~</code></pre>
+<p>Notice when we <code>glimpse(mv_predict)</code> we get three different values in <code>group</code>. These are different <strong>terciles</strong> of <code>cook_index</code>, and are calculated automatically by <code>ggemmeans</code>. We can make use of these in our <code>ggplot()</code>, by mapping the color aesthetic to <code>group</code>.</p>
+<pre class="r"><code>ggplot(data = states_df, aes(x = union10, y = womleg_2011)) +
+    geom_point() +#the geom_point() argument tells ggplot to make a scatterplot with these data
+    geom_line(data = mv_predict, aes(x = x, y = predicted, color = group)) +
+    labs(x = &quot;Percent Workers Unionized (2010)&quot;, #adding some nice labels
+             y = &quot;Percent of Legislature Women (2011)&quot;,
+             color = &quot;Cook Index&quot;, #titling our legend
+             title = &quot;Unionization and Women&#39;s Representation&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Now, instead of one estimate, we have three—one for each tercile of our partisan cook index control variable. When we control for partisanship, the apparent positive relationship between union membership and women’s representation disappears.</p>
+</div>
+</div>
+</div>

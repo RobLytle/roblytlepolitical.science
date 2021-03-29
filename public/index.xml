@@ -14,11 +14,11 @@
     
     <item>
       <title>Getting Started with RStudio</title>
-      <link>/post/2021-03-29-r-workshop/</link>
+      <link>/post/undergrad-workshop/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/post/2021-03-29-r-workshop/</guid>
+      <guid>/post/undergrad-workshop/</guid>
       <description>
-&lt;script src=&#34;./post/2021-03-29-r-workshop/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;./post/undergrad-workshop/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;many-roads-to-success&#34; class=&#34;section level1&#34;&gt;
@@ -228,17 +228,17 @@ library(haven) #Haven contains the read_dta() function; this allows us to read S
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Here is how you can make a density plot in base-R. I do not recommend this approach, but it is worthwhile learning it to build your understanding or R.
 #In your work, you are quite likely to come across older Rscripts which use these functions, and you should know how to read those.
 plot(density(states_df$womleg_2011))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#qplot is a function in the ggplot package that functions similarly to plot() in base-R
 #qplot picks the appropriate plot style automatically based on the number and type of variables that you input.
 #qplot is handy when you want to get a quick peek at the data, but you&amp;#39;re better off using ggplot() if you want to generate a publication quality visual.
 qplot(states_df$womleg_2011)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Here is a density plot of womleg_2011 in ggplot() this probably looks familiar to you from last semester
 ggplot(data = states_df, aes(x = womleg_2011)) +
     geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, these three approaches (&lt;code&gt;plot()&lt;/code&gt;, &lt;code&gt;qplot()&lt;/code&gt;, and &lt;code&gt;ggplot()&lt;/code&gt;) look quite different, but they all generate plots which look about the same. &lt;code&gt;ggplot()&lt;/code&gt; is the approach I recommend for almost every application. It’s very easy to extend, customize, and label your plot in ways that are difficult with &lt;code&gt;plot()&lt;/code&gt;, or &lt;code&gt;qplot()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Now let’s try making a scatterplot with &lt;code&gt;ggplot()&lt;/code&gt;. Here we’re using variables for percent of the legislature who are women and the percentage of unionized workers in the laborforce.&lt;/p&gt;
 &lt;/div&gt;
@@ -249,7 +249,7 @@ ggplot(data = states_df, aes(x = womleg_2011)) +
     labs(x = &amp;quot;Percent Workers Unionized (2010)&amp;quot;, #adding some nice labels
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;regression&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Regression&lt;/h3&gt;
@@ -305,7 +305,7 @@ bv_predict &amp;lt;- ggemmeans(bv_model, terms = &amp;quot;union10&amp;quot;)  #
     labs(x = &amp;quot;Percent Workers Unionized (2010)&amp;quot;, #adding some nice labels
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now let’s do the same thing with a multivariate model. We’ve added a control variable &lt;code&gt;cook_index&lt;/code&gt;, which shows states’ partisanship—low values indicate a state is more Republican, high values more Democratic. Using the function &lt;code&gt;ggemmeans()&lt;/code&gt; we can estimate the “effect” of union membership on women’s representation at different levels of partisanship. This lets us show the predicted “effect” of &lt;code&gt;x&lt;/code&gt; on &lt;code&gt;y&lt;/code&gt; at diffent levels of our control variable.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mv_model &amp;lt;- lm(womleg_2011 ~ union10 + cook_index, data = states_df) #run the regression just as before, adding cook_index to your formula
 summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
@@ -346,7 +346,7 @@ summary(mv_model)&lt;/code&gt;&lt;/pre&gt;
              y = &amp;quot;Percent of Legislature Women (2011)&amp;quot;,
              color = &amp;quot;Cook Index&amp;quot;, #titling our legend
              title = &amp;quot;Unionization and Women&amp;#39;s Representation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2021-03-29-r-workshop/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/undergrad-workshop/index_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now, instead of one estimate, we have three—one for each tercile of our partisan cook index control variable. When we control for partisanship, the apparent positive relationship between union membership and women’s representation disappears.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

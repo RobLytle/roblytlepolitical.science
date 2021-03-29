@@ -5,12 +5,39 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Rob Lytle</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
       <title>Rob Lytle</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Please, I&#39;m Begging You&amp;mdash;Stop Trying to Solve Polarization</title>
+      <link>/post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/</guid>
+      <description>
+&lt;script src=&#34;./post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Few topics are as often abused by pundits and political scientists as ideology—particularly as it relates to partisan polarization. Political scientists are uncharacteristically eager to problematize polarization and insinuate bold action to ameliorate—or at least avoid amplifying—polarization. In this essay, I argue two related points. First, that ideological &lt;em&gt;extremity&lt;/em&gt; and ideological &lt;em&gt;consistency&lt;/em&gt; are not synonymous, nor even necessarily correlated. Second, scholars should consider the popularity of the polarization subfield relative to others when proposing and evaluating interventions. It is not necessarily that polarization is a uniquely concerning phenomenon, it may simply be that more people write articles about (and thus have found more concerns regarding) polarization. Scholars of polarization should carefully consider the potential downsides of anti-polarization interventions.&lt;/p&gt;
+&lt;p&gt;Two oft-discussed effects of elite polarization include declining legislative productivity and a concomitant decline in the public’s trust in government. Researchers and pundits often propose reforms intended to advantage moderates (often malapropistically referenced as “non-ideological”) candidates over extreme (“ideological” candidates). Such a characterization fundamentally misrepresents what it means to be “ideological”. Breadth—the number of issue areas encompassed by a belief system—and constraint, the correlation between positions related to area &lt;em&gt;i&lt;/em&gt; and area &lt;em&gt;j&lt;/em&gt; are the defining characteristics of ideology. The extremity of a belief system is incidental as to whether the system constitutes an ideology.&lt;/p&gt;
+&lt;p&gt;A definition of ideology which includes “extremity” as a necessary condition for “ideology” would be over-complicated, and normatively troubling. Practically, such a definition would make generalizable comparisons of ideology nearly impossible, as extremity is a wholly context dependent descriptor. Belief systems’ status as “ideologies” would vary election to election and time to time; while nothing of value would be gained over an extremity-naïve conception of ideology. Defining ideology on the basis of extremity would describe the mainstream of political opinion at any given time not only as the most &lt;em&gt;popular&lt;/em&gt; strain of thought, but as the &lt;em&gt;default&lt;/em&gt; political position—rhetorically divorced from the unsavory domains of dishonest ideologues to its left and right. Ideas from outside the status-quo are de-legitimized—not through critique of their programmatic content but by a semantic sleight of hand.&lt;/p&gt;
+&lt;div id=&#34;figure-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;&lt;em&gt;Figure 1&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;./post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Such is the political world created by sloppy application of words like “ideology” and “moderation”. These words are not antonyms. Rather, “ideology” is a noun and “moderation” an adjective which can sometimes be used to describe an ideology! Pointing this out is not (only) pedantry, but has important implications for the way polarization is (or should be) addressed. Figure 1 represents the distributions of three legislators’ issue preferences along a one-dimensional left-right scale. The mean of distributions &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; are -1, 0, and 1 respectively. Each distribution describes an ideology: one left, one right, one between. Though centrist, candidate &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;’s belief system is precisely as constrained as &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;—the standard deviation of each distribution is .1.&lt;/p&gt;
+&lt;p&gt;Assume polarization causes gridlock because the distributions of polarized legislators’ preferences do not overlap and suppose a reform is introduced to favor moderate candidates over extreme candidates. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; loses their election to a candidate with &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt;’s issue preferences. Assuming &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; retains veto power, the reform has done little to ameliorate gridlock—there is no more overlap between &lt;span class=&#34;math inline&#34;&gt;\(B\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; than between &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;. The means may be closer, but they still do not agree on any single issue.&lt;/p&gt;
+&lt;p&gt;This is not to say that reforms &lt;em&gt;cannot&lt;/em&gt; reduce gridlock, only to illustrate that a reduction in polarization does not guarantee a reduction in harm resulting from polarization. Scholars should consider not just “mean ideology” but the shape of actors’ preference distributions. In a legislature populated by less ideological voters (who have much more variable ideological preferences) as depicted in Figure 2, a reform that removed &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; would indeed be likely to reduce gridlock, though the legislators’ mean ideology are identical to those in Figure 1 each distribution is much wider. If scholars focus narrowly on mean preferences or other convenient, single-value descriptions of ideology (like self-placements or NOMINATE scores) there is no way to know if our world more closely resembles Figure 1 or Figure 2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;figure-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;strong&gt;&lt;em&gt;Figure 2&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;./post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The volume of polarization-centric work has the potential to induce myopia in social scientists, causing them to overestimate the importance and centrality of polarization as a sinister independent variable from which follows so many political ills. Polarization &lt;em&gt;may&lt;/em&gt; be a fundamental problem of American politics, or it may just be the subfield in which the most researchers look for problems. In centering polarization and treating it as a first-order normative concern, researchers may overlook or obfuscate other problems in our politics. Even if advantaging PACs would reduce polarization, it does not follow that such a reform would improve the political climate of the U.S.—to say nothing of the material outcomes produced by our political system.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>ANES Coding Problem: VCF0731</title>
@@ -89,7 +116,7 @@ unique(cdf$VCF0731)
 
 &lt;/figure&gt;
 
-In a painfully predictable turn of events, COVID-19 cases have begun to skyrocket in Florida, a few short weeks after state and local government began the process of (prematurely) rolling back public health safeguards. This week, Governor Ron DeSantis performed an impressive rhetorical trick, abdicating not just his own responsibility for the death and illness—but that of all the wealthy consumers and business owners agitating for a return to normalcy at the expense of workers&amp;rsquo; lives.&lt;/p&gt;
+In a painfully predictable turn of events, COVID-19 cases have begun to skyrocket in Florida, a few short weeks after state and local government began the process of (prematurely) rolling back public health safeguards. This week, Governor Ron DeSantis performed an impressive rhetorical trick, abdicating not just his own responsibility for the death and illness—but that of all the wealthy consumers and business owners agitating for a return to normalcy at the expense of workers&#39; lives.&lt;/p&gt;
 &lt;p&gt;Desantis says 
 &lt;a href=&#34;https://www.theguardian.com/world/2020/jun/20/florida-covid19-surge-reopening-governor-desantis-coronavirus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;We&amp;rsquo;re not shutting down. We&amp;rsquo;re going to go forward. We&amp;rsquo;re not rolling back. You have to have society function&amp;rdquo;&lt;/a&gt; and that 
 &lt;a href=&#34;https://www.miamiherald.com/news/coronavirus/article243685702.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;The disease burden is not as significant as it was in March and April,&amp;rdquo; it&amp;rsquo;s “Very important to point out. We’re in a much better position than we were in March or April.”&lt;/a&gt;. According to DeSantis, to &amp;ldquo;shut down&amp;rdquo; (institute necessary and reasonable public health protections) the state now would do more harm to the people of Florida than the Coronavirus.&lt;/p&gt;
@@ -189,31 +216,13 @@ gridExtra::grid.arrange(democ,
 &lt;h3 id=&#34;some-responses-are-truncated&#34;&gt;Some responses are truncated.&lt;/h3&gt;
 &lt;p&gt;Feeling thermometer questions ask respondents to rate their warmth towards a group (like &amp;ldquo;Democrats&amp;rdquo; or &amp;ldquo;Catholics&amp;rdquo;) on a scale from 0–100. As seen above though, the ANES feeling thermometer variables max out at 97. 98 and 99 are (supposedly) reserved for &lt;code&gt;NA&lt;/code&gt;/&lt;code&gt;Don&#39;t Know&lt;/code&gt;—though that convention is not currently in use. Likely this was done to save space and avoid 3-digit numbers. Size may have been a valid concern in a time before several-terabyte harddrives were commonplace, but serves no purpose now.&lt;/p&gt;
 &lt;p&gt;From the researcher&amp;rsquo;s perspective, this truncation is troublesome, but not disastrous. Net group affect—a common measure of polarization (e.g., 
-&lt;a href=&#34;https://academic.oup.com/poq/article-abstract/76/3/405/1894274&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iyengar, Sood, and Lelkes 2012&lt;/a&gt;)—is measured as &lt;code&gt;\(FT_{in} - FT_{out}\)&lt;/code&gt;. Since the ANES coding scheme essentially subtracts &lt;code&gt;3&lt;/code&gt; from a sizeable chunk of respondents&amp;rsquo; in-party scores (notice how many &lt;code&gt;97&lt;/code&gt;s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.&lt;/p&gt;
+&lt;a href=&#34;https://academic.oup.com/poq/article-abstract/76/3/405/1894274&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iyengar, Sood, and Lelkes 2012&lt;/a&gt;)—is measured as &lt;code&gt;\(FT_{in} - FT_{out}\)&lt;/code&gt;. Since the ANES coding scheme essentially subtracts &lt;code&gt;3&lt;/code&gt; from a sizeable chunk of respondents&#39; in-party scores (notice how many &lt;code&gt;97&lt;/code&gt;s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.&lt;/p&gt;
 &lt;p&gt;These aren&amp;rsquo;t the only instances of truncation or a misleading 
 &lt;a href=&#34;https://electionstudies.org/anes_timeseries_cdf_codebook_var/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; entry, 
 &lt;a href=&#34;http://gojiberries.io/2010/12/29/coding-issues-in-the-anes-cumulative-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; is an example of a variable in which the variable&amp;rsquo;s levels varied year to year—not noted in its 
 &lt;a href=&#34;https://electionstudies.org/anes_timeseries_cdf_codebook_var/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; entry.&lt;/p&gt;
 &lt;h3 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h3&gt;
 &lt;p&gt;The lesson here is to always validate for yourself what is claimed by a dataset&amp;rsquo;s documentation. These problems usually are not deadly, just easily missed. Implementing some kind of version control on the CDF would presumably make it easier to improve the dataset and fix these headaches without breaking existing scripts/analyses.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     

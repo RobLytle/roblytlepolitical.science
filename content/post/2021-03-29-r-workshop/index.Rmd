@@ -31,9 +31,7 @@ header-includes:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,
-#											fig.width = 7, fig.height = 4
-)
+
 library(tidyverse) #tidyverse
 library(kableExtra) # one way to make tables
 library(stargazer) # Another way to make tables (can also output esttab to .tex--examples below)

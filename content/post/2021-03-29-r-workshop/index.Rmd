@@ -110,12 +110,17 @@ Let's make a few density plots of the variable `womleg_2011`, the proportion of 
 #Here is how you can make a density plot in base-R. I do not recommend this approach, but it is worthwhile learning it to build your understanding or R.
 #In your work, you are quite likely to come across older Rscripts which use these functions, and you should know how to read those.
 plot(density(states_df$womleg_2011))
+```
+
+```{R}
 
 #qplot is a function in the ggplot package that functions similarly to plot() in base-R
 #qplot picks the appropriate plot style automatically based on the number and type of variables that you input.
 #qplot is handy when you want to get a quick peek at the data, but you're better off using ggplot() if you want to generate a publication quality visual.
 qplot(states_df$womleg_2011)
+```
 
+```{R}
 # Here is a density plot of womleg_2011 in ggplot() this probably looks familiar to you from last semester
 ggplot(data = states_df, aes(x = womleg_2011)) +
 	geom_density()

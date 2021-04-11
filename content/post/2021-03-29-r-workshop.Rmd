@@ -37,11 +37,11 @@ Before you start coding, you need to create a new project directory. A `.proj` f
 
 See the screenshots below to set up your project.
 
-!["Creating a new project"](img/new-project.PNG)
+!["Creating a new project"](img/r-workshop/new-project.PNG)
 
-!["Place the project in a new directory"](img/new-directory.PNG)
+!["Place the project in a new directory"](img/r-workshop/new-directory.PNG)
 
-!["We just need a regular project"](img/new-project-3.PNG)
+!["We just need a regular project"](img/r-workshop/new-project-3.PNG)
 
 !["Give your project a name, and tell RStudio where to put it"](img/new-directory.PNG)
 

@@ -49,12 +49,12 @@
 &lt;p class=&#34;caption&#34;&gt;“We just need a regular project”&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;img/new-directory.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/r-workshop/new-directory.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Give your project a name, and tell RStudio where to put it”&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), givign it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you &lt;strong&gt;must&lt;/strong&gt; write it in your script, not the console or terminal window below.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;img/blank-project.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;img/r-workshop/blank-project.PNG&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;“Click the &#34;new script&#34; button in the upper left corner”&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

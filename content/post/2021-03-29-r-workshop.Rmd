@@ -45,7 +45,7 @@ See the screenshots below to set up your project.
 
 ![Give your project a name, and tell RStudio where to put it](/img/r-workshop/new-directory.PNG)
 
-Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), givign it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you **must** write it in your script, not the console or terminal window below.
+Congratulations! You now have a new project open, but you need to make a new script so you can actually write some code! Click the new script button in the upper left, then save the script (ctrl-s on Windows or cmd-s on a Mac), giving it a descriptive name. Your script is in the upper-left quadrant of your RStudio window and it is where you will write the bulk (if not all) of your code. If you want code to be saved you **must** write it in your script, not the console or terminal window below.
 
 !["Click the \"new script\" button in the upper left corner"](/img/r-workshop/blank-project.PNG)
 

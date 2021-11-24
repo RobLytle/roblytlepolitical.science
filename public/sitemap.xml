@@ -1,222 +1,134 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/category/anes/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/anes/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/undergrad-workshop/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/plot/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/political-science/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/political-science/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/politics/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/public-opinion/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/public-opinion/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/r/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/r-markdown/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/rstats/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/survey/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/tidy-data/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/tidyverse/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/visualization/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/ideology/</loc>
     <lastmod>2021-02-23T17:54:08-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/please-i-m-begging-you-mdash-stop-trying-to-solve-polarization/</loc>
     <lastmod>2021-02-23T17:54:08-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/polarization/</loc>
     <lastmod>2021-02-23T17:54:08-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/politics/</loc>
     <lastmod>2021-02-23T17:54:08-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/anes-problems-too/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/coronavirus/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/covid-19/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/florida/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/florida-politics/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/category/florida-politics/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/governor/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/ron-desantis/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/state-politics/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/banality-of-desantis/</loc>
     <lastmod>2020-06-22T12:47:58-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/anes-problems/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/affect/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/in-party-affect/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/partisanship/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/polarization/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tag/survey-research/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/authors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/publication_types/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/rob-lytle/</loc>
   </url>
-  
 </urlset>

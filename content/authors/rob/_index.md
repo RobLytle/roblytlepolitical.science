@@ -26,7 +26,7 @@ social:
   link: '#contact'
 #- icon: twitter
 #  icon_pack: fab
-#  link: https://twitter.com/GeorgeCushen
+#  link: https://twitter.com/ra_lytle
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -40,8 +40,4 @@ user_groups:
 - Visitors
 ---
 
-I'm earning my doctorate in political science at Florida State University studying polarization, anti-establishment politics, and the affective divisions within parties. 
-
-This site is currently under construction. Going forward, I'll keep it up to date with project updates and [blog posts](post). If you're interested in what I'm working on right now, feel free to follow me on [GitHub](https://github.com/RobLytle), where I host my in-progress research.
-
-This is a personal blog. Any views or opinions expressed here are personal, belonging solely to me and do not represent those of the people, institutions, and organizations with whom I may be associated. 
+I have a masters degree in political science from Florida State University. Now I work in the non-profit space and write about things for fun and satisfaction. Thanks for visiting! 

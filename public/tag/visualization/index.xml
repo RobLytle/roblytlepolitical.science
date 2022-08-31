@@ -7,7 +7,7 @@
     <description>visualization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_3.png</url>
       <title>visualization</title>
       <link>/tag/visualization/</link>
     </image>
@@ -463,13 +463,13 @@ gridExtra::grid.arrange(democ,
              ft,
           ncol = 3)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;p&gt;Sure enough, none of the values &lt;code&gt;DK&lt;/code&gt;/&lt;code&gt;NA&lt;/code&gt;/&lt;code&gt;RF&lt;/code&gt; values denoted in the 
 &lt;a href=&#34;https://electionstudies.org/anes_timeseries_cdf_codebook_var/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; actually appear in the CDF. It seems as though they were switched to &lt;code&gt;NA&lt;/code&gt; when the dataset was prepared.&lt;/p&gt;
 &lt;h3 id=&#34;some-responses-are-truncated&#34;&gt;Some responses are truncated.&lt;/h3&gt;
 &lt;p&gt;Feeling thermometer questions ask respondents to rate their warmth towards a group (like &amp;ldquo;Democrats&amp;rdquo; or &amp;ldquo;Catholics&amp;rdquo;) on a scale from 0–100. As seen above though, the ANES feeling thermometer variables max out at 97. 98 and 99 are (supposedly) reserved for &lt;code&gt;NA&lt;/code&gt;/&lt;code&gt;Don&#39;t Know&lt;/code&gt;—though that convention is not currently in use. Likely this was done to save space and avoid 3-digit numbers. Size may have been a valid concern in a time before several-terabyte harddrives were commonplace, but serves no purpose now.&lt;/p&gt;
 &lt;p&gt;From the researcher&amp;rsquo;s perspective, this truncation is troublesome, but not disastrous. Net group affect—a common measure of polarization (e.g., 
-&lt;a href=&#34;https://academic.oup.com/poq/article-abstract/76/3/405/1894274&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iyengar, Sood, and Lelkes 2012&lt;/a&gt;)—is measured as &lt;code&gt;\(FT_{in} - FT_{out}\)&lt;/code&gt;. Since the ANES coding scheme essentially subtracts &lt;code&gt;3&lt;/code&gt; from a sizeable chunk of respondents&#39; in-party scores (notice how many &lt;code&gt;97&lt;/code&gt;s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.&lt;/p&gt;
+&lt;a href=&#34;https://academic.oup.com/poq/article-abstract/76/3/405/1894274&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Iyengar, Sood, and Lelkes 2012&lt;/a&gt;)—is measured as &lt;code&gt;\(FT_{in} - FT_{out}\)&lt;/code&gt;. Since the ANES coding scheme essentially subtracts &lt;code&gt;3&lt;/code&gt; from a sizeable chunk of respondents&amp;rsquo; in-party scores (notice how many &lt;code&gt;97&lt;/code&gt;s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.&lt;/p&gt;
 &lt;p&gt;These aren&amp;rsquo;t the only instances of truncation or a misleading 
 &lt;a href=&#34;https://electionstudies.org/anes_timeseries_cdf_codebook_var/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;codebook&lt;/a&gt; entry, 
 &lt;a href=&#34;http://gojiberries.io/2010/12/29/coding-issues-in-the-anes-cumulative-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; is an example of a variable in which the variable&amp;rsquo;s levels varied year to year—not noted in its 

@@ -214,8 +214,8 @@
   
 
   <link rel="manifest" href="../../index.webmanifest">
-  <link rel="icon" type="image/png" href="../../images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="../../images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="../../images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="../../post/anes-problems/">
 
@@ -235,8 +235,8 @@
   <meta property="og:site_name" content="Rob Lytle">
   <meta property="og:url" content="/post/anes-problems/">
   <meta property="og:title" content="ANES Headaches and Headscratchers | Rob Lytle">
-  <meta property="og:description" content="The American National Election Study (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the &ldquo;cumulative data file&rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset."><meta property="og:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="The American National Election Study (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the &ldquo;cumulative data file&rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset."><meta property="og:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-06-19T00:00:00&#43;00:00">
@@ -282,7 +282,7 @@
     "name": "Rob Lytle",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_192x192_fill_lanczos_center_2.png"
+      "url": "/images/icon_hu0ee476e0f8e52f1f1634ede288429d6f_11738_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "The American National Election Study (ANES) is one of the longest running survey datasets, stretching back to 1948—offering public opinion researchers excellent continuity over a broad base of questions. ANES data is hosted either as individual survey years, or in the \u0026ldquo;cumulative data file\u0026rdquo; (CDF), which coalesces each biennial (or quadrennial) iteration of the survey into a single dataset."
@@ -582,7 +582,8 @@
   <h1>ANES Headaches and Headscratchers</h1>
 
   
-  <p class="page-subtitle">An incomplete collection of eccentricities in the <a href="https://electionstudies.org/">American National Election Study</a></p>
+  <p class="page-subtitle">An incomplete collection of eccentricities in the 
+<a href="https://electionstudies.org/" target="_blank" rel="noopener">American National Election Study</a></p>
   
 
   
@@ -719,13 +720,13 @@ gridExtra::grid.arrange(democ,
              ft,
           ncol = 3)
 </code></pre>
-<p><img src="../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<img src="../../post/2020-06-18-an-incomplete-record-of-anes-goof-em-ups.en_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 <p>Sure enough, none of the values <code>DK</code>/<code>NA</code>/<code>RF</code> values denoted in the 
 <a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> actually appear in the CDF. It seems as though they were switched to <code>NA</code> when the dataset was prepared.</p>
 <h3 id="some-responses-are-truncated">Some responses are truncated.</h3>
 <p>Feeling thermometer questions ask respondents to rate their warmth towards a group (like &ldquo;Democrats&rdquo; or &ldquo;Catholics&rdquo;) on a scale from 0–100. As seen above though, the ANES feeling thermometer variables max out at 97. 98 and 99 are (supposedly) reserved for <code>NA</code>/<code>Don't Know</code>—though that convention is not currently in use. Likely this was done to save space and avoid 3-digit numbers. Size may have been a valid concern in a time before several-terabyte harddrives were commonplace, but serves no purpose now.</p>
 <p>From the researcher&rsquo;s perspective, this truncation is troublesome, but not disastrous. Net group affect—a common measure of polarization (e.g., 
-<a href="https://academic.oup.com/poq/article-abstract/76/3/405/1894274" target="_blank" rel="noopener">Iyengar, Sood, and Lelkes 2012</a>)—is measured as <code>\(FT_{in} - FT_{out}\)</code>. Since the ANES coding scheme essentially subtracts <code>3</code> from a sizeable chunk of respondents' in-party scores (notice how many <code>97</code>s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.</p>
+<a href="https://academic.oup.com/poq/article-abstract/76/3/405/1894274" target="_blank" rel="noopener">Iyengar, Sood, and Lelkes 2012</a>)—is measured as <code>\(FT_{in} - FT_{out}\)</code>. Since the ANES coding scheme essentially subtracts <code>3</code> from a sizeable chunk of respondents&rsquo; in-party scores (notice how many <code>97</code>s there are relative to other high-end responses) studies that use net group affect or something similar are likely to underestimate the degree of polarization—albeit by a small degree.</p>
 <p>These aren&rsquo;t the only instances of truncation or a misleading 
 <a href="https://electionstudies.org/anes_timeseries_cdf_codebook_var/" target="_blank" rel="noopener">codebook</a> entry, 
 <a href="http://gojiberries.io/2010/12/29/coding-issues-in-the-anes-cumulative-file/" target="_blank" rel="noopener">here</a> is an example of a variable in which the variable&rsquo;s levels varied year to year—not noted in its 
@@ -1073,7 +1074,7 @@ gridExtra::grid.arrange(democ,
     
     
     
-    <script src="../../js/academic.min.72756512af279b10e3e4b09540ed6e9f.js"></script>
+    <script src="../../js/academic.min.401ba81ed535f2e599b326a63fb33682.js"></script>
 
     
 

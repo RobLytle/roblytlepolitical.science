@@ -40,4 +40,7 @@ user_groups:
 - Visitors
 ---
 
-I have a masters degree in political science from Florida State University. Now I work in the non-profit space and write about things for fun and satisfaction. Thanks for visiting! 
+
+I hold an M.S. in political science from Florida State University. Since earning my degree I have worked in the nonprofit sector, and as a freelance statistician, policy analyst, and web designer. 
+
+This is a personal blog. Any views or opinions expressed here belong solely to me and do not represent those of the people, institutions, and organizations with whom I may be associated. 

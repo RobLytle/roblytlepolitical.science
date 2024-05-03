@@ -572,5 +572,238 @@ gridExtra::grid.arrange(democ,
       <description></description>
     </item>
     
+    <item>
+      <title>More Thoughts on Polarization</title>
+      <link>/post/2024-05-02-more-thoughts-on-polarization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/2024-05-02-more-thoughts-on-polarization/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;p&gt;These days, it is taken as common knowledge by many scholars, pundits, and journalists that the United States exists in a period of intense “polarization”. The United States is a country divided along political lines—be they partisan, ideological, or geographic. This essay is challenges the assumptions on which these positive claims rest as well as the normative prescriptions which so often follow. Above all, competent research on and characterization of polarization requires precision in language and concept. The population of interest (most often the mass public or elites), the level of analysis, and the substantive content of your quantity of interest must be clearly defined and not over-generalized. Finally, polarization of any kind must be understood as a dynamic process, not simply as a synonym for “division”, “sorting”, or “animosity”. I close by urging the reader to center the substantive, material outcomes of political programs and to be skeptical of characterizations of polarization as a primary political concern.&lt;/p&gt;
+&lt;p&gt;Academic discussions of partisan polarization typically focus on one of two populations:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The mass public.&lt;/li&gt;
+&lt;li&gt;Elites (most often members of congress).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and one of two quantities of interest:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Democrats’ and Republicans’ ideological positions (ideological polarization).&lt;/li&gt;
+&lt;li&gt;Democrat and Republican dispostion towards one another (affective polarization).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Typically, elite polarization research focuses on ideological positions of politicians—often measured through the conceptually problematic NOMINATE score &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-poole1985spatial&#34;&gt;Poole and Rosenthal 1985&lt;/a&gt;)&lt;/span&gt;. Not only do NOMINATE measures not account for the content of a bill being voted on beyond its subject area, the NOMINATE score of party &lt;span class=&#34;math inline&#34;&gt;\(D\)&lt;/span&gt; are necessarily dependent on the positions of party &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;, and vice-versa.&lt;/p&gt;
+&lt;p&gt;Consider the 103&lt;sup&gt;rd&lt;/sup&gt; and 104&lt;sup&gt;th&lt;/sup&gt; congresses. Republicans ran in 1994 under the promise of Newt Gingrich’s unabashedly rightwing legislative agenda, as described in the “Contract With America”. The new Republican majority put forth a swath of proposals further right than those of their predecessors. Using NOMINATE, there is no way to differentiate between a rightward shift in Republicans and a leftward shift in Democrats. If the Democrats’ ideologies stayed constant from the 103&lt;sup&gt;rd&lt;/sup&gt; to 104&lt;sup&gt;th&lt;/sup&gt; congress, we would still expect a “left” shift in their NOMINATE scores (which we in fact see in Fig. 1), as any one Democrat would be less likely to vote with the increasingly extreme Republicans. For a party to maintain a stable distribution of NOMINATE scores in the face of an increasingly extreme opposition their preferences would have to shift &lt;em&gt;towards&lt;/em&gt; the other party, to continue voting with them at a comparable rate. NOMINATE is a useful tool for describing partisan sorting (increasing homogeneity of political preferences), but says nothing of ideological extremity.&lt;/p&gt;
+&lt;p&gt;A better measure of ideology could treat a party or representative’s position at &lt;span class=&#34;math inline&#34;&gt;\(t_0\)&lt;/span&gt; as a base category, defining that subject’s ideology at &lt;span class=&#34;math inline&#34;&gt;\(t_1\)&lt;/span&gt; in terms of the number of issue areas on which (or the degree to which) the subject shifted left, right, or not at all. As with NOMINATE, such a measure would include an arbitrary starting point, but would improve on NOMINATE by making that point clearly defined, conceptually relevant, and independent of other actors at any one time. An ideological shift in either party could be clearly discerned, a shift in one party would have no bearing on the position of the other party. Finally, while defining an objective ideology is difficult, categorizing shifts as being to the left or right is relatively easy. Whatever imperfect measurement is used, in the absence of an objective measure of ideology researchers should not shy from building qualitative arguments.&lt;/p&gt;
+&lt;p&gt;Despite NOMINATE’s lack of content validity, there is broad agreement among scholars that elites have polarized along ideological lines; that is Republicans have become more reliably conservative and Democrats’ more liberal. As shown in the distribution of NOMINATE scores from the 100&lt;sup&gt;th&lt;/sup&gt; to 115&lt;sup&gt;th&lt;/sup&gt; congresses below, even under the &lt;em&gt;strong&lt;/em&gt; assumption that NOMINATE is a valid measure of ideology&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;, characterizations of elite polarization as relatively symmetrical across parties are somewhat misleading.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/2024-05-02-more-thoughts-on-polarization_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;While there has been slight leftward movement among Democrats (mostly from the 100&lt;sup&gt;th&lt;/sup&gt; to 104&lt;sup&gt;th&lt;/sup&gt; congresses), the rightward drift of the Republican party is much more pronounced. When the distance between distributions of partisan ideology is highlighted by researchers—rather than the location and scale of &lt;em&gt;each&lt;/em&gt; distribution—the data generating process is obscured. Relatively equal movement in both parties is implicit in the word “polarization”. This may seem a small, perhaps pedantic nitpick. Not so! Not only does “polarization” warp researchers’ perception of the descriptive contours of the data, the misapplication of terms propagates to the more widely consumed venues through think-tanks pundits, and news media.&lt;/p&gt;
+&lt;p&gt;Scholarly and popular accounts of elite polarization take polarization as extant, to be the “fault” of both parties, and as &lt;em&gt;ex ante&lt;/em&gt; detrimental to quality representation. This chain of misperceptions, predicated on faulty assumptions about NOMINATE scores and mass ideology has created a bevy of authors decrying a “disconnect” between moderate constituents and their extreme representatives &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-fiorina2012disconnect&#34;&gt;Fiorina and Abrams 2012&lt;/a&gt;)&lt;/span&gt; or similarly, “leapfrog representation”, whereby the sensible, moderate public is forced to choose between two equally unappealing, ideologically extreme parties &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-bafumi2010leapfrog&#34;&gt;Bafumi and Herron 2010&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;These authors point to the extensive body of public opinion research assuring political scientists that the public is not composed of ideologues &lt;span class=&#34;citation&#34;&gt;Zaller et al. (&lt;a href=&#34;#ref-zaller1992nature&#34;&gt;1992&lt;/a&gt;)&lt;/span&gt;, while noting that &lt;em&gt;congress&lt;/em&gt; is increasingly dominated by ideologues. The central flaw in this argument is the conflation of two distinct states: “lacking an ideology” and “being a moderate”. When authors write about leapfrog representation or the “exhausted center” &lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; they leverage evidence that voters have relatively few issue positions congruent with the party that represents them to argue that most members of the public are, in fact, moderate.&lt;/p&gt;
+&lt;p&gt;The portrayal of apparent moderate voters as holding moderate preferences is erroneous. To the extent that members of the public hold preferences they are unconstrained; taking leftwing positions on some issues, rightwing positions on others, as do moderates &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;c&lt;/em&gt; in the table below &lt;span class=&#34;citation&#34;&gt;D. Ahler and Broockman (&lt;a href=&#34;#ref-djtmoderate&#34;&gt;2015&lt;/a&gt;)&lt;/span&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;. This variation is flattened, because an individual’s ideology is almost always measured in one of two ways:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A self report with little predictive validity.&lt;/li&gt;
+&lt;li&gt;An average of reported issue positions, scaled or otherwise.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As identified by &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-ahler2018delegate&#34;&gt;D. J. Ahler and Broockman 2018&lt;/a&gt;)&lt;/span&gt; and illustrated below, an ostensibly moderate ideology does not imply moderate policy positions. All of the hypothetical voters appear to be perfect moderates, yet agree on no single issue. In contrast, moderates as they manifest in the elite—e.g. &lt;em&gt;New Labour&lt;/em&gt; in the UK and the &lt;em&gt;Third Way&lt;/em&gt; Democrats in the U.S.— are themselves ideologues; possessing highly constrained sets of moderate preferences (more akin to the “Moderate &lt;em&gt;a&lt;/em&gt;” in the table). Ideology is not predicated on extremity.&lt;/p&gt;
+&lt;table style=&#34;width:100%;&#34;&gt;
+&lt;caption&gt;Three possible “moderate” voters, all with very different beliefs. 0 indicates the most liberal position, 1 the most conservative. Were this an actual dataset you would likely see several &lt;code&gt;NA&lt;/code&gt;s.&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;22%&#34; /&gt;
+&lt;col width=&#34;24%&#34; /&gt;
+&lt;col width=&#34;26%&#34; /&gt;
+&lt;col width=&#34;26%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Issue&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Moderate &lt;em&gt;a&lt;/em&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;“Moderate” &lt;em&gt;b&lt;/em&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;“Moderate” &lt;em&gt;c&lt;/em&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Abortion&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Gun Control&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Climate&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Deficit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;Free Trade&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Health Care&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;NATO&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Green New Deal&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;UBI&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;Police Defunding&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;strong&gt;MEAN:&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;.5&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;.5&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;.5&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As citizens’ average ideologies are bereft of substance and as citizens’ themselves largely lack the ability to match substantive issue positions with relevant ideological labels &lt;span class=&#34;citation&#34;&gt;Zaller et al. (&lt;a href=&#34;#ref-zaller1992nature&#34;&gt;1992&lt;/a&gt;)&lt;/span&gt;, the assertion that elite ideological polarization is a grave threat to quality representation is not only unfounded, but Ahler and Broockman argue that interventions to decrease elite polarization and encourage moderation on a policy-by-policy basis stand themselves to decrease the quality of representation.&lt;/p&gt;
+&lt;p&gt;This frankly relieving fact has not stopped the growth of a cottage industry of anti-polarization books, op-eds, and think-tanks from urging such interventions against ideological &lt;em&gt;and&lt;/em&gt; affective polarization (though the distinction is not always made clear) among elites and the public. A quick search for books about “political polarization” yields 557 results on Amazon.com, written by journalists, political scientists, politicians, and marriage counselors, sporting titles like: &lt;em&gt;Dead Center: How Political Polarization Divided America and What We Can Do About It&lt;/em&gt;&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;, &lt;em&gt;Them: Why We Hate Each Other—and How to Heal&lt;/em&gt;&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;, and &lt;em&gt;I Love You, but I Hate Your Politics&lt;/em&gt; &lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Works in this budding tradition frequently contain a haphazard mix of evidence of mass ideological and affective polarization; not always careful to distinguish between the two. For example, Morris Fiorina’s &lt;em&gt;Culture War?&lt;/em&gt; argues that Republicans and Democrats at the mass level aren’t actually hostile towards one another because their preferences are unconstrained &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-fiorina2005culture&#34;&gt;Fiorina, Abrams, and Pope 2005&lt;/a&gt;)&lt;/span&gt;, while Alan Abramowitz’s &lt;em&gt;The Disappearing Center&lt;/em&gt; cites increasing political engagement as evidence of increasingly extreme mass ideology &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-abramowitz2010disappearing&#34;&gt;Abramowitz 2010&lt;/a&gt;)&lt;/span&gt;. To be clear, partisan &lt;em&gt;animosity&lt;/em&gt; has been steadily increasing since the 1980s &lt;span class=&#34;citation&#34;&gt;Klar, Krupnikov, and Ryan (&lt;a href=&#34;#ref-klar2018affective&#34;&gt;2018&lt;/a&gt;)&lt;/span&gt; but whether this disdain should be characterized as &lt;em&gt;polarization&lt;/em&gt; is dubious &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-klar2018affective&#34;&gt;Klar, Krupnikov, and Ryan 2018&lt;/a&gt;)&lt;/span&gt;. In any case, social trends are no excuse for poorly defined concepts found in these works.&lt;/p&gt;
+&lt;p&gt;The praise heaped on Vox editor Ezra Klein’s recent book &lt;em&gt;Why We’re Polarized&lt;/em&gt; is illustrative of more general, normative concerns about the way polarization is discussed. Francis Fukuyama, of &lt;em&gt;The End of History&lt;/em&gt; fame, calls polarization&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“…the most central of political puzzles…”,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;MSNBC host Chris Hayes says&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“[polarization] just might be our central, perhaps fatal problem…[the book is] absolutely critical in our current moment”,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and moral psychologist Jonathan Haidt writes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Something has gone terribly wrong with American politics in the last decade or so”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;All of these statements take polarization (it is not clear if by “polarization” they mean ideological, affective, etc) as &lt;em&gt;de facto&lt;/em&gt; harmful; something to be fixed, a state from which the country must “heal”.&lt;/p&gt;
+&lt;p&gt;This same rhetorical thread is the foundational principle of groups like &lt;em&gt;More in Common&lt;/em&gt;, which “works on both short and longer term initiatives to address the underlying drivers of fracturing and polarization, and build more united, resilient and inclusive societies.” Again, division itself is centered in the conversation. Just as NOMINATE scores erase substantive distinctions between legislators, policy, and party; the ink spilled fretting over polarization flattens political discourse. In a polarization-centric paradigm, policies and politicians are praised or condemned by way of their interaction with polarization, not for their substantive content. One driving force behind congressional sorting from the 1940s to 1990s is the decline, party switching, retirement, and death of the pro-segregation Southern Democrats, who often voted with Republicans on race and social issues. I find it hard to believe that our political culture would be healthier if both major parties contained a caucus of unabashed racists&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;. This may seem a ridiculous point, but it illustrates the obvious: that the importance of considering a politician or policy’s divisiveness should be second to its substance.&lt;/p&gt;
+&lt;p&gt;Ironically, reducing politics to a meta-critique of political discussion centered around “polarization”, “partisanship”, or “tribalism” makes consensus building—&lt;em&gt;de&lt;/em&gt;polarization—all the more difficult; ensuring that discussions of how best to apply the State’s monopoly on violence are inseparable from concepts of party and tribe. Would it not be more effective to intervene against polarization by building an affirmative case for a political program? Just because something is divisive at &lt;span class=&#34;math inline&#34;&gt;\(t_1\)&lt;/span&gt; does not mean it is undesirable, nor that it will continue to be divisive at &lt;span class=&#34;math inline&#34;&gt;\(t_2\)&lt;/span&gt;. The public’s opinions are malleable, and political elites have the power to shift them &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-lenz2013follow&#34;&gt;Lenz 2013&lt;/a&gt;)&lt;/span&gt;. Rather than simultaneously scolding citizens who are politically disengaged&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt; and pearl clutching when they’re &lt;em&gt;too engaged&lt;/em&gt;, elites should focus on advocating for their own positive vision of the State.&lt;/p&gt;
+&lt;p&gt;Whatever small proportion of political science work reaches the public or gains influence outside the discipline is often filtered through journalism and punditry. As a consequence, political scientists have a responsibility to monitor how insights from our discipline are applied outside of academia. In some cases, the same researchers describing polarization in journals are warning about polarization in bestselling books, or the pages of &lt;em&gt;The Washington Post&lt;/em&gt;. Flimsy assumptions and misguided interventions are flimsy and misguided whether published in the APSR or the &lt;em&gt;New York Times&lt;/em&gt;. Political scientists should take care not to overgeneralize, avoid conflating partisanship with ideology, and avoid treating polarization itself as a disease.&lt;/p&gt;
+&lt;div id=&#34;some-disorganized-closing-thoughts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Some Disorganized Closing Thoughts:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Appeals to process and norms box the party making the appeal into a corner. Liberals should not say that the court has gotten too ideological, they should make the case that the courts are being used for nefarious ends. They should &lt;em&gt;want&lt;/em&gt; to appoint ideological judges, just that those judges should have a &lt;em&gt;good ideology&lt;/em&gt; and should make the case for each as such.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We are in a situation where one party acts (correctly) as though politics is a contest over a monopoly on state violence, and will do anything to secure their hold on that monopoly. The other party is committed to fairness and compromise. The first party will &lt;em&gt;always&lt;/em&gt; get more of what they want, because the second is both reactionary in its program and conservative in its prescriptions.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“Extreme” &lt;span class=&#34;math inline&#34;&gt;\(\neq\)&lt;/span&gt; “Wrong”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“moderate” &lt;span class=&#34;math inline&#34;&gt;\(\neq\)&lt;/span&gt; “right” | “reasonable” | “sensible”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Polarization as a top-level problem are mostly a way to launder ideological preferences should be mostly disregarded. If you don’t like that the Republican Party has moved to the right since the 1970s, you should make that position clear.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;references-1&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-abramowitz2010disappearing&#34; class=&#34;csl-entry&#34;&gt;
+Abramowitz, Alan. 2010. &lt;em&gt;The Disappearing Center: Engaged Citizens, Polarization, and American Democracy&lt;/em&gt;. Yale University Press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-djtmoderate&#34; class=&#34;csl-entry&#34;&gt;
+Ahler, Doug, and David Broockman. 2015. &lt;span&gt;“Donald Trump Is a Textbook Example of an Ideological Moderate.”&lt;/span&gt; Edited by The Washington Post. &lt;a href=&#34;https://www.washingtonpost.com/news/monkey-cage/wp/2015/12/16/donald-trump-is-a-textbook-example-of-an-ideological-moderate/&#34;&gt;https://www.washingtonpost.com/news/monkey-cage/wp/2015/12/16/donald-trump-is-a-textbook-example-of-an-ideological-moderate/&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-ahler2018delegate&#34; class=&#34;csl-entry&#34;&gt;
+Ahler, Douglas J, and David E Broockman. 2018. &lt;span&gt;“The Delegate Paradox: Why Polarized Politicians Can Represent Citizens Best.”&lt;/span&gt; &lt;em&gt;The Journal of Politics&lt;/em&gt; 80 (4): 1117–33.
+&lt;/div&gt;
+&lt;div id=&#34;ref-bafumi2010leapfrog&#34; class=&#34;csl-entry&#34;&gt;
+Bafumi, Joseph, and Michael C Herron. 2010. &lt;span&gt;“Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.”&lt;/span&gt; &lt;em&gt;American Political Science Review&lt;/em&gt; 104 (3): 519–42.
+&lt;/div&gt;
+&lt;div id=&#34;ref-americanvoter&#34; class=&#34;csl-entry&#34;&gt;
+Campbell, Angus, Philip E. Converse, Warren E. Miller, and Donald E. Stokes. 1960. &lt;em&gt;The American Voter&lt;/em&gt;. University of Chicago Press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-converse1964nature&#34; class=&#34;csl-entry&#34;&gt;
+Converse, Philip. 1964. &lt;span&gt;“The Nature of Belief Systems in Mass Publics.”&lt;/span&gt; &lt;em&gt;Ideology and Discontent&lt;/em&gt;, 206–61.
+&lt;/div&gt;
+&lt;div id=&#34;ref-fiorina2012disconnect&#34; class=&#34;csl-entry&#34;&gt;
+Fiorina, Morris P, and Samuel J Abrams. 2012. &lt;em&gt;Disconnect: The Breakdown of Representation in American Politics&lt;/em&gt;. Vol. 11. University of Oklahoma Press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-fiorina2005culture&#34; class=&#34;csl-entry&#34;&gt;
+Fiorina, Morris P, Samuel J Abrams, and Jeremy C Pope. 2005. &lt;span&gt;“Culture War? The Myth of a Polarized America.”&lt;/span&gt; &lt;em&gt;The Myth of a Polarized America&lt;/em&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-iyengar2018strengthening&#34; class=&#34;csl-entry&#34;&gt;
+Iyengar, Shanto, and Masha Krupenkin. 2018. &lt;span&gt;“The Strengthening of Partisan Affect.”&lt;/span&gt; &lt;em&gt;Political Psychology&lt;/em&gt; 39: 201–18.
+&lt;/div&gt;
+&lt;div id=&#34;ref-iyengar2012affect&#34; class=&#34;csl-entry&#34;&gt;
+Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. &lt;span&gt;“Affect, Not Ideology: A Social Identity Perspective on Polarization.”&lt;/span&gt; &lt;em&gt;Public Opinion Quarterly&lt;/em&gt; 76 (3): 405–31.
+&lt;/div&gt;
+&lt;div id=&#34;ref-klar2018affective&#34; class=&#34;csl-entry&#34;&gt;
+Klar, Samara, Yanna Krupnikov, and John Barry Ryan. 2018. &lt;span&gt;“Affective Polarization or Partisan Disdain? Untangling a Dislike for the Opposing Party from a Dislike of Partisanship.”&lt;/span&gt; &lt;em&gt;Public Opinion Quarterly&lt;/em&gt; 82 (2): 379–90.
+&lt;/div&gt;
+&lt;div id=&#34;ref-lenz2013follow&#34; class=&#34;csl-entry&#34;&gt;
+Lenz, Gabriel S. 2013. &lt;em&gt;Follow the Leader?: How Voters Respond to Politicians’ Policies and Performance&lt;/em&gt;. University of Chicago Press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-mcclosky1984american&#34; class=&#34;csl-entry&#34;&gt;
+McClosky, Herbert, and John Zaller. 1984. &lt;em&gt;The American Ethos: Public Attitudes Toward Capitalism and Democracy&lt;/em&gt;. Harvard Univ Pr.
+&lt;/div&gt;
+&lt;div id=&#34;ref-poole1985spatial&#34; class=&#34;csl-entry&#34;&gt;
+Poole, Keith T, and Howard Rosenthal. 1985. &lt;span&gt;“A Spatial Model for Legislative Roll Call Analysis.”&lt;/span&gt; &lt;em&gt;American Journal of Political Science&lt;/em&gt;, 357–84.
+&lt;/div&gt;
+&lt;div id=&#34;ref-zaller1992nature&#34; class=&#34;csl-entry&#34;&gt;
+Zaller, John R et al. 1992. &lt;em&gt;The Nature and Origins of Mass Opinion&lt;/em&gt;. Cambridge university press.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes footnotes-end-of-document&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;As opposed to what NOMINATE really is, a measure of &lt;em&gt;sorting&lt;/em&gt;.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://hiddentribes.us/pdf/hidden\_tribes\_report.pdf&#34; class=&#34;uri&#34;&gt;https://hiddentribes.us/pdf/hidden\_tribes\_report.pdf&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Zaller analogizes survey response as akin to drawing a range of positions from a hat &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-zaller1992nature&#34;&gt;Zaller et al. 1992&lt;/a&gt;)&lt;/span&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/35901304-dead-center&#34; class=&#34;uri&#34;&gt;https://www.goodreads.com/book/show/35901304-dead-center&lt;/a&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/38714379-them?from_search=true&amp;amp;from_srp=true&amp;amp;qid=g6ych9rby0&amp;amp;rank=1&#34; class=&#34;uri&#34;&gt;https://www.goodreads.com/book/show/38714379-them?from_search=true&amp;amp;from_srp=true&amp;amp;qid=g6ych9rby0&amp;amp;rank=1&lt;/a&gt;&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/41150276-i-love-you-but-i-hate-your-politics?from_search=true&amp;amp;from_srp=true&amp;amp;qid=IzxOufQk7g&amp;amp;rank=1&#34; class=&#34;uri&#34;&gt;https://www.goodreads.com/book/show/41150276-i-love-you-but-i-hate-your-politics?from_search=true&amp;amp;from_srp=true&amp;amp;qid=IzxOufQk7g&amp;amp;rank=1&lt;/a&gt; (this is the one by a marriage counselor)&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;To be fair, I doubt many anti-polarization pundits are arguing for exactly this&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;I for one am very excited to see which demographics didn’t turn out in this election.&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

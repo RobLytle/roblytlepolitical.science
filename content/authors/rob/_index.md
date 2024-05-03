@@ -41,4 +41,5 @@ user_groups:
 ---
 
 
-I'm a data and policy analyst with a substantive background in electoral behavior and partisan affect. 
+I'm a data and policy analyst with a substantive background in electoral behavior and partisan affect. Hit me up if you want to chat about fringe politics, online radicalization, or political polarization. Also hit me up if you want to talk about my cat (Greta) or if you need help with R. 
+

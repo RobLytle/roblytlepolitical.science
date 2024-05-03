@@ -8,6 +8,7 @@ categories:
   - politics
   - ideology
 tags: []
+math: true
 subtitle: ''
 summary: ''
 authors: []

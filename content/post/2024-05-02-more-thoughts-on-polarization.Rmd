@@ -1,8 +1,9 @@
 ---
 title: "More Thoughts on Polarization"
-subtitle: "This is definitely not a republished graduate student essay."
+subtitle: "This is definitely not a republished grad student essay from 2021."
 author: "Rob Lytle"
 math: true
+date: "2024-05-02"
 bibliography: refs/references.bib
 documentclass: paper
 fontsize: 12
@@ -148,10 +149,6 @@ Whatever small proportion of political science work reaches the public or gains 
 - "moderate" $\neq$ "right" \| "reasonable" \| "sensible" 
 
 - Polarization as a top-level problem are mostly a way to launder ideological preferences should be mostly disregarded. If you don't like that the Republican Party has moved to the right since the 1970s, you should make that position clear.
-
-\clearpage
-
-# References
 
 
 \clearpage

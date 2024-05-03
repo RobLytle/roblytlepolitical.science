@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/post/2024-05-02-more-thoughts-on-polarization/</loc>
+    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-05-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/anes/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -26,9 +35,6 @@
     <loc>/tag/politics/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tag/public-opinion/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -39,9 +45,6 @@
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/r-markdown/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/rstats/</loc>
@@ -126,8 +129,6 @@
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/authors/</loc>
-  </url><url>
-    <loc>/post/2024-05-02-more-thoughts-on-polarization/</loc>
   </url><url>
     <loc>/publication_types/</loc>
   </url><url>

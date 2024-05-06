@@ -139,16 +139,17 @@ Ironically, reducing politics to a meta-critique of political discussion centere
 
 Whatever small proportion of political science work reaches the public or gains influence outside the discipline is often filtered through journalism and punditry. As a consequence, political scientists have a responsibility to monitor how insights from our discipline are applied outside of academia. In some cases, the same researchers describing polarization in journals are warning about polarization in bestselling books, or the pages of *The Washington Post*. Flimsy assumptions and misguided interventions are flimsy and misguided whether published in the APSR or the *New York Times*. Political scientists should take care not to overgeneralize, avoid conflating partisanship with ideology, and avoid treating polarization itself as a disease.
 
-### Some Disorganized Closing Thoughts:
+### Some Disorganized Closing Thoughts to Prompt Discussion:
 
-- Appeals to process and norms box the party making the appeal into a corner. Liberals should not say that the court has gotten too ideological, they should make the case that the courts are being used for nefarious ends. They should *want* to appoint ideological judges, just that those judges should have a *good ideology* and should make the case for each as such. 
+- Appeals to process and norms box the actor making the appeal into a corner. Liberals should not say that the court has gotten too ideological, they should make the case that the courts are being used for nefarious ends. They should *want* to appoint ideological judges, just that those judges should have a *good ideology* ("good" is of course, fairly subjective) and should make the case for each as such. 
 
-- We are in a situation where one party acts (correctly) as though politics is a contest over a monopoly on state violence, and will do anything to secure their hold on that monopoly. The other party is committed to fairness and compromise. The first party will *always* get more of what they want, because the second is both reactionary in its program and conservative in its prescriptions.
+- In a situation where one set of political actors act (correctly) as though politics is a contest over a monopoly on state violence, and is highly motivated to secure their hold on that monopoly while an opposing set of actors is committed to fairness and compromise the first set of actors will get more of what they want, because the second is both reactive in its program and conservative in its prescriptions.
 
-- "Extreme" $\neq$ "Wrong"
-- "moderate" $\neq$ "right" \| "reasonable" \| "sensible" 
+- "Extreme" $\neq$ "Wrong"^[Obviously, a position could be both "extreme" and "wrong", but extremity is not a sufficient condition for wrongness.]
 
-- Polarization as a top-level problem are mostly a way to launder ideological preferences should be mostly disregarded. If you don't like that the Republican Party has moved to the right since the 1970s, you should make that position clear.
+- "moderate" $\neq$ "right" \| "reasonable" \| "sensible"^[See above.]
+
+- There are certainly negative outcomes *associated* with socio-political division, but commentators, politicians, and researchers should take care not to assume that the division is the *cause* of the problem. When political decisions threaten your safety, health, or livelihood, it is not unreasonable to be upset with those who have made the decisions.
 
 
 \clearpage
